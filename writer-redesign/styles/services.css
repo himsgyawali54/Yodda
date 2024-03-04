@@ -63,61 +63,66 @@
   padding: 3rem 0 0.5rem;
   font-weight: 600;
 }
-
-.row-cols-lg-4 {
-  margin-bottom: 5.5rem;
+.things-to-consider-heading {
+  padding: 1.5rem 0 0;
 }
-
-.row-cols-lg-4 .col-odd .card {
+.things-to-consider {
+  padding: 1rem 0 1rem 0.8rem;
+  width: 55%;
+}
+.things-to-consider-carousel .col-odd .card {
   background-color: var(--color-primary);
   transition: transform 0.3s ease-in-out;
 }
-.row-cols-lg-4 .col-even .card {
+.things-to-consider-carousel .col-even .card {
   background-color: #63caad;
   transition: transform 0.3s ease-in-out;
 }
-.row-cols-lg-4 .card:hover {
+.things-to-consider-carousel .card:hover {
   background-color: #b8ea38;
   transform: scale(1.03);
 }
-.things-to-consider {
-  padding: 3rem 0;
-  font-weight: 600;
-}
 
-.row-cols-lg-4 .card {
-  padding: 0.5rem 1rem;
+.things-to-consider-carousel .card {
+  padding: 2rem 3rem;
   height: 100%;
   border: none;
 }
-.row-cols-lg-4 .card .card-body .card-heading {
-  padding-bottom: 0.8rem;
-}
-.row-cols-lg-4 .card .card-body .card-heading .bi {
-  font-size: calc(var(--h2-fontsize) + 1rem);
+
+.things-to-consider-carousel .card .card-body .card-heading .bi {
+  font-size: calc(var(--h2-fontsize) + 2.5rem);
   color: #fff;
 }
-.row-cols-lg-4 .card .card-body span {
+.things-to-consider-carousel .card .card-body span {
   font-size: var(--h3-fontsize);
   font-weight: 500;
   color: #fff;
 }
-.row-cols-lg-4 .card .card-body p {
+.things-to-consider-carousel .carousel-item .card .card-body p:first-of-type {
+  font-size: var(--h2-fontsize);
   color: #fff;
-  padding: 1rem 0;
-  font-size: calc(var(--h5-fontsize) + 0.2rem);
+  padding: 0.5rem 0;
+}
+.things-to-consider-carousel .card .card-body p {
+  color: #fff;
+  padding-bottom: 1rem;
+  font-size: calc(var(--h5-fontsize) + 0.1rem);
+  font-weight: 400;
 }
 @media (max-width: 768px) {
-  .row-cols-lg-4 .card {
+  .things-to-consider {
+    width: 100%;
+  }
+  .things-to-consider-carousel .card {
     padding: 0rem;
   }
-  .row-cols-lg-4 .card .card-body p {
+  .things-to-consider-carousel .card .card-body p {
     padding: 0.3rem 0;
   }
-  .row-cols-lg-4 .card .card-body .card-heading {
+  .things-to-consider-carousel .card .card-body .card-heading {
     padding-bottom: 0;
   }
-  .row-cols-lg-4 {
+  .things-to-consider-carousel {
     margin-bottom: 3rem;
   }
 }
@@ -376,11 +381,11 @@
 .ka02-report-writing .row .tab-content .tab-pane .child-tab {
   margin-top: 3rem;
 }
-.ka02-faq table th{
+.ka02-faq table th {
   font-weight: 600;
   padding: 1rem;
 }
-.ka02-faq table td{
+.ka02-faq table td {
   padding: 1rem;
 }
 @media (max-width: 768px) {

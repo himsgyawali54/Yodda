@@ -463,6 +463,10 @@ footer .go-to-top-btn i {
   header.navbar-scrolled {
     box-shadow: 10px 5px 5px #c7c2c245;
   }
+  header .navbar .nav-link {
+    border-bottom: 0.5px solid #42b13834;
+    margin-bottom: 1rem;
+  }
   main section:first-child {
     padding-top: 9rem;
   }
