@@ -1,0 +1,111 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP_HOST} !^www\. [NC]
+    RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    RewriteCond %{HTTP:X-Forwarded-Proto} !https
+    RewriteCond %{HTTPS} off
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+Options +FollowSymLinks -MultiViews -Indexes
+DirectorySlash Off
+
+# Trailing slash
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+
+
+
+# Makes the directory files work
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule (.*[^/])$ $1/ [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\.html\ HTTP/
+RewriteRule ^(.*)\.html$ /$1 [R=301,L]
+
+Redirect 301 /acs-migration-skill-assessment-documents-checklist /document-checklist-for-acs-skill-assessment
+Redirect 301 /skilled-occupation-list-australia-2022 /skilled-occupation-list-australia
+Redirect 301 /top-10-engineering-professions-in-australia /top-10-engineering-jobs-in-australia
+Redirect 301 /skilled-independent-work-visa /skilled-independent-visa-189
+Redirect 301 /acs-anzsco-code-occupation-list /acs-anzsco-code
+Redirect 301 /cdr-services /services
+Redirect 301 /summary-statement-engineer-australia /summary-statement-writing
+Redirect 301 /cdr-report-review-service-australia /cdr-review-service
+Redirect 301 /acs-rpl-report /how-to-write-acs-rpl-report
+Redirect 301 /how-to-write-acs-rpl-report-on-your-own /how-to-write-acs-rpl-report
+
+
+
+
+
+
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+ # Images
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # Video
+  ExpiresByType video/webm "access plus 1 year"
+  ExpiresByType video/mp4 "access plus 1 year"
+  ExpiresByType video/mpeg "access plus 1 year"
+
+  # Fonts
+  ExpiresByType font/ttf "access plus 1 year"
+  ExpiresByType font/otf "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/font-woff "access plus 1 year"
+
+  # CSS, JavaScript
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+
+  # Others
+  ExpiresByType application/pdf "access plus 1 year"
+  ExpiresByType image/vnd.microsoft.icon "access plus 1 year"
+</IfModule>
+
+# RewriteCond %{SERVER_PORT} 80
+# RewriteRule ^(.*)$ https://www.cdrwriteraustralia.com/$1 [R=301,L]
+
+# RewriteEngine on
+# # Redirect /file.html to /file
+# RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
+# RewriteRule ^ /%1 [NE,L,R]
+# # Now we will internally map /file to/ file.html
+# RewriteCond %{REQUEST_FILENAME}.html -f
+# RewriteRule ^(.*)/?$ /$1.html  [L]
+
+# RewriteCond %{HTTPS} !on
+# RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+# RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+# RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# RewriteCond %{HTTPS} off
+# RewriteCond %{HTTP:X-Forwarded-SSL} !on
+# RewriteCond %{HTTP_HOST} ^cdrwriteraustralia\.com$ [OR]
+# RewriteCond %{HTTP_HOST} ^www\.cdrwriteraustralia\.com$
+# RewriteRule ^/?$ "https\:\/\/www\.cdrwriteraustralia\.com\/" [R=301,L]
+
+# <IfModule mod_rewrite.c>
+# 	RewriteCond %{HTTPS} off
+# 	RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# 	RewriteCond %{HTTP_HOST} !^www\. [NC]
+# 	RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# </IfModule>
+
+

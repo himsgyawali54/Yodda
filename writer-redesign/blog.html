@@ -1,0 +1,3266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recent Blogs | CDR Writers Australia</title>
+    <meta
+      content="Find out more about skilled migration and CDR for Engineers Australia. Learn about CDR writing techniques, skill evaluation and more in our blogs."
+      name="description"
+    />
+    <link rel="canonical" href="https://www.cdrwriteraustralia.com/blog" />
+    <link href="./img/cdr-writer-australia-logo-favicon.webp" rel="icon" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <style>
+      .hero {
+        background: none;
+        padding-bottom: 0;
+      }
+
+      .hero h1 {
+        color: #080808;
+        margin-bottom: 0;
+        font-weight: 700;
+      }
+
+      .hero h1 span {
+        color: var(--color-primary);
+      }
+
+      .floating-btn {
+        position: fixed;
+        z-index: 999;
+        top: 10%;
+        right: 5%;
+      }
+
+      .offcanvas-body {
+        padding-left: 2rem;
+      }
+
+      .blogs-grid .row .col {
+        position: relative;
+      }
+
+      .blogs-grid .row .col .card {
+        border: none;
+        box-shadow: var(--card-shadow);
+      }
+
+      .blogs-grid .row .col .card .card-body h2 {
+        font-size: var(--h3-fontsize);
+      }
+
+      .blogs-grid .row .col .card .card-body .blog-author {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .blogs-grid .row .col .card .card-body p {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    </style>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </head>
+
+  <body>
+    <header class="fixed-top" id="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-top">
+          <a class="navbar-brand order-0" href="/">
+            <img
+              class="logo"
+              src="./img/cdr-writer-australia-logo.webp"
+              alt="CDR Writer Australia Logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler order-2 order-lg-1"
+            type="button"
+            tabindex="0"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse order-2 order-lg-1"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto gap-lg-5">
+              <li class="nav-item">
+                <a class="nav-link" href="about-us">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <span
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  tabindex="0"
+                  data-bs-auto-close="outside"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </span>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="services"
+                      >All CDR Services</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="cdr-report-writing"
+                      >CDR Report Writing</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="career-episode-writing"
+                      >Career Episode Writing</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="summary-statement-writing"
+                      >Summary Statement Writing</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="cdr-review-service">
+                      CDR Review Service</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="stage-2-cdr-writing">
+                      Stage 2 CDR Writing</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="stage-2-competency-claims-writing"
+                    >
+                      Stage 2 Competency Claims Writing</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/cdr-stage-2-review">
+                      CDR Stage 2 Review Service</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="rpl-report-writing"
+                      >RPL Report Writing</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="rpl-review-service"
+                      >RPL Review Service</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="ka02-report-writing"
+                      >KA02 Report Writing</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <span
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  tabindex="0"
+                  data-bs-auto-close="outside"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  ANZSCO
+                </span>
+                <ul class="dropdown-menu">
+                  <li class="sub-dropdown">
+                    <span
+                      class="dropdown-item dropdown-toggle d-lg-none"
+                      data-bs-toggle="dropdown"
+                      role="button"
+                      tabindex="0"
+                    >
+                      ANZSCO Codes CDR
+                    </span>
+
+                    <a
+                      class="dropdown-item dropdown-toggle d-none d-lg-block"
+                      href="anzsco-codes"
+                    >
+                      ANZSCO Codes CDR
+                    </a>
+                    <div class="dropdown-menu row row-cols-1 row-cols-lg-3">
+                      <p class="d-lg-none">
+                        <a href="anzsco-codes"
+                          >Full List of ANZSCO Codes CDR
+                        </a>
+                      </p>
+                      <div class="col">
+                        <p>UNIT GROUP 1332</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/engineering-manager-133211">
+                              Engineering Manager ANZSCO 133211</a
+                            >
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2331</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/chemical-engineer-233111">
+                              Chemical Engineer ANZSCO 233111</a
+                            >
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/materials-engineer-233112">
+                              Materials Engineer ANZSCO 233112</a
+                            >
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2332</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/civil-engineer-233211">
+                              Civil Engineer ANZSCO 233211</a
+                            >
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/geotechnical-engineer-233212"
+                              >Geotechnical Engineer ANZSCO 233212
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/structural-engineer-233214"
+                              >Structural Engineer ANZSCO 233214
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/transport-engineer-233215"
+                              >Transport Engineer ANZSCO 233215
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2333</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/electrical-engineer-233311"
+                              >Electrical Engineer ANZSCO 233311
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2334</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/electronics-engineer-233411"
+                              >Electronics Engineer ANZSCO 233411
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <p>UNIT GROUP 2335</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/industrial-engineer-233511"
+                              >Industrial Engineer ANZSCO 233511
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/mechanical-engineer-233512"
+                              >Mechanical Engineer ANZSCO 233512
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/production-engineer-233513">
+                              Production Engineer ANZSCO 233513
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2336</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/mining-engineer-233611"
+                              >Mining Engineer ANZSCO 233611
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/petroleum-engineer-233612"
+                              >Petroleum Engineer ANZSCO 233612
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2339</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/aeronautical-engineer-233911">
+                              Aeronautical Engineer ANZSCO 233911
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/agricultural-engineer-233912"
+                              >Agricultural Engineer ANZSCO 233912
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/biomedical-engineer-233913"
+                              >Biomedical Engineer ANZSCO 233913
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/engineering-technologist-233914"
+                              >Engineering Technologist ANZSCO 233914
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/environmental-engineer-233915"
+                              >Environmental Engineer ANZSCO 233915
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/engineering-professionals-nec-233999"
+                              >Engineering Professional ANZSCO 233999
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <p>UNIT GROUP 2633</p>
+                        <ul>
+                          <li>
+                            <a
+                              href="anzsco-codes/telecommunication-engineer-263311"
+                              >Telecommunication Engineer ANZSCO 263311
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/telecommunication-network-engineer-263312"
+                              >Telecommunication Network Engineer ANZSCO 263312
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 3122</p>
+                        <ul>
+                          <li>
+                            <a
+                              href="anzsco-codes/civil-engineering-draftsperson-312211"
+                              >Civil Engineering Draftsperson ANZSCO 312211
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/civil-engineering-technician-312212"
+                              >Civil Engineering Technician ANZSCO 312212
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 3123</p>
+                        <ul>
+                          <li>
+                            <a
+                              href="anzsco-codes/electrical-engineering-draftsperson-312311"
+                              >Electrical Engineering Draftsperson ANZSCO 312311
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/electrical-engineering-technician-312312"
+                              >Electrical Engineering Technician ANZSCO 312312
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 3132</p>
+                        <ul>
+                          <li>
+                            <a
+                              href="anzsco-codes/telecommunications-field-engineer-313212"
+                              >Telecommunications Field Engineer ANZSCO 313212
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="sub-dropdown">
+                    <span
+                      class="dropdown-item dropdown-toggle d-lg-none"
+                      data-bs-toggle="dropdown"
+                      role="button"
+                      tabindex="0"
+                    >
+                      ACS ANZSCO Code
+                    </span>
+                    <a
+                      class="dropdown-item dropdown-toggle d-none d-lg-block"
+                      href="acs-anzsco-code"
+                    >
+                      ACS ANZSCO Code
+                    </a>
+                    <div class="dropdown-menu row row-cols-1 row-cols-lg-3">
+                      <p class="d-lg-none">
+                        <a href="acs-anzsco-code"
+                          >Full List of ACS ANZSCO Code
+                        </a>
+                      </p>
+                      <div class="col">
+                        <p>UNIT GROUP 1351</p>
+                        <ul>
+                          <li>
+                            <a
+                              href="anzsco-codes/chief-information-officer-135111"
+                            >
+                              Chief Information Officer ANZSCO 135111</a
+                            >
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/ict-project-manager-135112">
+                              ICT Project Manager ANZSCO 135112</a
+                            >
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/ict-managers-nec-135199">
+                              ICT Managers nec ANZSCO 135199</a
+                            >
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2232</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/ict-trainer-223211">
+                              ICT Trainer ANZSCO 223211</a
+                            >
+                          </li>
+                        </ul>
+
+                        <p>UNIT GROUP 2611</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/ict-business-analyst-261111"
+                              >ICT Business Analyst ANZSCO 261111
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/system-analyst-261112"
+                              >System Analyst ANZSCO 261112
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2612</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/multimedia-specialist-261211"
+                              >Multimedia Specialist ANZSCO 261211
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/web-developer-261212"
+                              >Web Developer ANZSCO 261212
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <p>UNIT GROUP 2613</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/analyst-programmer-261311"
+                              >Analyst Programmer ANZSCO 261311
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/developer-programmer-261312"
+                              >Developer Programmer ANZSCO 261312
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/software-engineer-261313">
+                              Software Engineer ANZSCO 261313
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/software-tester-261314">
+                              Software Tester ANZSCO 261314
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/software-and-applications-programmer-nec-261399"
+                            >
+                              Software and Applications Programmer<br />
+                              nec ANZSCO 261399
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2621</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/database-administrator-262111"
+                              >Database Administrator ANZSCO 262111
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/ict-security-specialist-262112"
+                              >ICT Security Specialist ANZSCO 262112
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/systems-administrator-262113"
+                              >Systems Administrator ANZSCO 262113
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <p>UNIT GROUP 2631</p>
+                        <ul>
+                          <li>
+                            <a
+                              href="anzsco-codes/computer-network-and-systems-engineer-263111"
+                              >Computer Network and Systems Engineer ANZSCO
+                              263111
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/network-administrator-263112"
+                              >Network Administrator ANZSCO 263112
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/network-analyst-263113"
+                              >Network Analyst ANZSCO 263113
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2632</p>
+                        <ul>
+                          <li>
+                            <a
+                              href="anzsco-codes/ict-quality-assurance-engineer-263211"
+                              >ICT Quality Assurance Engineer ANZSCO 263211
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/ict-support-engineer-263212"
+                              >ICT Support Engineer ANZSCO 263212
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/ict-systems-test-engineer-263213"
+                              >ICT Systems Test Engineer ANZSCO 263213
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/ict-support-and-test-engineers-nec-263299"
+                              >ICT Support and Test Engineers nec ANZSCO 263299
+                            </a>
+                          </li>
+                        </ul>
+
+                        <p>UNIT GROUP 3131</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/web-administrator-313113"
+                              >Web Administrator ANZSCO 313113
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cdr-report-samples">CDR Samples</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <a
+            href="tel:+61 480097490"
+            class="btn-all order-1 order-lg-2"
+            aria-label="Phone Number of CDRWriterAustralia"
+            ><i class="bi-telephone-outbound-fill"></i>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main id="blogs">
+      <section class="hero">
+        <div class="breadcrumbs">
+          <p>Our <span>Blogs</span></p>
+          <ul>
+            <li><a href="/">Home</a> &raquo</li>
+            <li>Blogs</li>
+          </ul>
+        </div>
+        <button
+          class="btn-all floating-btn"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          Blog List
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <h1 class="offcanvas-title" id="offcanvasRightLabel">
+              Our Blog List
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ol>
+              <!--
+                <li>
+                  <a target="_blank" href="(Url of the New Blog)">(H1 of the New Blog)</a>
+                </li>
+                -->
+              <li>
+                <a target="_blank" href="ka02-knowledge-assessment"
+                  >KA02 Knowledge Assessment: A Complete Guide</a
+                >
+              </li>
+
+              <li>
+                <a target="_blank" href="rpl-australia"
+                  >RPL Australia: A Complete Guide</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="highest-paid-engineering-jobs-in-australia"
+                  >Top Highest Paid Engineering Jobs in Australia</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="budget-friendly-cdr-writer-for-ea"
+                  >Budget-Friendly Cheap CDR Writer for EA</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="training-visa-subclass-407-visa"
+                  >Training Visa Subclass 407 Visa Australia</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="regional-sponsored-migration-scheme-187-visa-australia"
+                  >Regional Sponsored Migration Scheme Subclass 187 Visa
+                  Australia</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="skilled-employer-sponsered-regional-494-visa"
+                  >Skilled Employer Sponsored Regional (Provisional) Subclass
+                  494 Visa Australia</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="skilled-work-regional-491-visa"
+                  >Skilled Work Regional (Provisional) Subclass 491 Visa
+                  Australia</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="temporary-graduate-485-visa"
+                  >Temporary Graduate Subclass 485 Visa Australia</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="temporary-skill-shortage-482-visa"
+                  >Temporary Skill Shortage Subclass 482 Visa Australia</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="skilled-nominated-visa-subclass-190-visa"
+                  >State Sponsored Skilled Nominated Visa Subclass 190 Visa</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="employer-nomination-scheme-186-visa"
+                  >Employer Nominated Scheme Subclass 186 visa</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="types-of-skilled-migration-visa-to-australia-for-engineers"
+                  >A Guide for Types of Skilled Migration Visa to Australia for
+                  International Engineers</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="skill-assessment-validity"
+                  >Skill Assessment Validity for Engineers Australia</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="tips-to-write-a-professional-resume-for-engineers-australia"
+                  >Tips To Write A Professional Resume For Engineers
+                  Australia</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="outcome-of-fast-track-and-normal-track-skills-assessment"
+                  >What Is The Outcome Of The Fast Track And Normal Track Skills
+                  Assessment?</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="how-to-write-a-perfect-cv-for-engineers-australia"
+                  >How to Write a Perfect CV for Engineers Australia?</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="become-a-chartered-engineer"
+                  >The Pathways to Becoming a chartered engineer in Australia</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="most-employable-degrees-in-australia"
+                  >Most Employable Degrees In Australia For 2023</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="ea-stage-1-competencies"
+                  >EA Stage 1 Competencies</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="civil-engineer-victoria-registration-guidelines"
+                  >Civil Engineers victoria registration guidelines 2023</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="electrical-engineer-victoria-registration-guidelines"
+                  >Electrical Engineers victoria registration guidelines 2023</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="acs-skills-assessment"
+                  >ACS Skills Assessment for Skilled Migration to Australia
+                  2023</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="ipenz-competence-assessment"
+                  >IPENZ Competence Assessment for Skilled Migration New
+                  Zealand</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="employment-reference-letter-for-australian-immigration-sample"
+                  >Employment reference letter Australian Immigration with
+                  Sample</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="engineers-australia-skills-assessment"
+                  >Engineers Australia Skills Assessment for Migrant
+                  Engineers</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="migration-skill-assessment-booklet-for-engineers-australia"
+                  >Migration Skill Assessment (MSA) Booklet for Engineers
+                  Australia</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="engineers-australia-assessment-fees"
+                  >Engineers Australia Assessment Fees</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="onshore-and-offshore-visa-application-process-in-australia"
+                  >Difference between the Onshore and Offshore visa application
+                  process in Australia</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="ner-work-experiences-statement-for-australia"
+                  >NER Work Experiences Statement for Australia</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="skilled-recognised-graduate-visa-476"
+                  >Skilled Recognised Graduate Subclass 476 Visa</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="free-fast-track-skill-assessment"
+                  >Free Fast Track Skill Assessment</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="10-ways-to-write-a-perfect-cdr">
+                  10 Ways To Write a Perfect CDR report for Engineers Australia
+                  in 2023</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="10-common-cdr-report-mistakes-for-skill-assessment"
+                >
+                  10 Common CDR Report Mistakes Made by Applicants for Skill
+                  Assessment</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="cdr-report-for-electronics-engineers">
+                  CDR Report For Electronics Engineers - ANZSCO Code 233411</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="cdr-report-for-electrical-engineers">
+                  CDR Report For Electrical Engineers - ANZSCO Code 233311</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="chartered-professional-engineers">
+                  Chartered professional Engineers (CPEng) Australia</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="relationship-statement-for-partners-visa"
+                >
+                  How can a Relationship Statement be written for your Partner's
+                  Visa?</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="engineers-australia-chartered-competencies"
+                >
+                  Stage 2 chartered Competencies for Engineers Australia
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="skillselect-eoi">
+                  What is SkillSelect EOI in Skilled Migration?</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="national-engineering-register">
+                  National Engineering Register by Engineers Australia</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="prepare-your-cpd-for-cdr-report">
+                  Prepare your CPD for the CDR Report</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="employment-reference-letter-for-acs-rpl-report"
+                >
+                  Employment Reference Letter for ACS RPL Reports</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="cpd-statement-sample">
+                  CPD statement sample for CDR writers</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="civil-engineer-skill-migration-australia"
+                >
+                  How to skill migrate to Australia as a Civil engineer?</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="mechanical-engineers-cdr-reports">
+                  Everything to know about CDR Report for Mechanical Engineers
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="skillselect-australia">
+                  What Is Skillselect Australia And Its Visa Categories?</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="top-10-engineering-jobs-in-australia">
+                  Top 10 Engineering Jobs in Australia 2023</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="skilled-independent-visa-189">
+                  Skilled Independent Visa Subclass 189</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="skilled-occupation-list-australia">
+                  Skilled Occupation List Australia 2023</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="skills-assessment-pathways-for-engineers"
+                >
+                  Application Pathways for Migration Skills Assessment
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="document-checklist-for-acs-skill-assessment"
+                >
+                  Complete Document Checklist for ACS Skill Assessment
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="anzsco-skill-level-classification">
+                  ANZSCO Skill Level Classification</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="how-to-write-acs-rpl-report">
+                  How to Write ACS RPL Report on Your Own?</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="skilled-migration-to-australia-with-pr"
+                >
+                  All About Skilled Migration to Australia with PR Visa</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="cdr-report-writers-india">
+                  Why do engineers in India choose us for CDR writing?</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="mltssl-medium-long-term-strategic-skills-list-2022"
+                >
+                  Medium and Long-Term Strategic Skills List (MLTSSL) - 2023</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="should-i-hire-an-expert-or-write-my-own-cdr"
+                >
+                  Should I Hire an Expert or write my own CDR?</a
+                >
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section class="blogs-grid">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 g-md-5">
+            <!--
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/(Image of the New blog)"
+                  alt="(H1 of the New blog)"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p><i class="bi-calendar-week"> </i> (Date of Publish of the Blog: Ex "Mar 03 2020")</p>
+                  </div>
+                  <h2>(H1 of the New blog)</h2>
+                  <p>
+                    (3-4 lines of text from the New Blog. Do not add the links)
+                  </p>
+                  <hr />
+                  <a target="_blank"
+                    href="(Url of the Blog)"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            -->
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/ka02-knowledge-assessment.webp"
+                  alt="ka02 knowledge assessment"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p><i class="bi-calendar-week"> </i> Jan 12 2024</p>
+                  </div>
+                  <h2>KA02 Knowledge Assessment: A Complete Guide</h2>
+                  <p>
+                    KA02 knowledge assessment is a competency-based assessment
+                    of professional engineers who want to migrate to New Zealand
+                    on a skilled visa.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="ka02-knowledge-assessment"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="./img/rpl-australia.webp" alt="rpl australia" />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p><i class="bi-calendar-week"> </i> Dec 05 2023</p>
+                  </div>
+                  <h2>RPL Australia: A Complete Guide</h2>
+                  <p>
+                    An RPL Australia is a document submitted to the Australian
+                    Computer Society (ACS). It is crucial for ICT practitioners
+                    who want to showcase their already existing skills,
+                    knowledge and experience to achieve a formal qualification.
+                    It is also needed to migrate to Australia as a skilled ICT
+                    professional.
+                  </p>
+                  <hr />
+                  <a target="_blank" href="rpl-australia" class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/highest-paid-engineering-jobs-in-australia.webp"
+                  alt="Highest paying engineering jobs in Australia"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p><i class="bi-calendar-week"> </i> Aug 30 2023</p>
+                  </div>
+                  <h2>Top Highest Paid Engineering Jobs in Australia</h2>
+                  <p>
+                    Engineering Jobs in Australia are always in high demand
+                    especially if you are among the Civil, Software, Mining or
+                    Industrial engineers.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="highest-paid-engineering-jobs-in-australia"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/budget-friendly-cdr-writer-for-ea.webp"
+                  alt="budget friendly cheap cdr writer"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p><i class="bi-calendar-week"> </i> Aug 23 2023</p>
+                  </div>
+                  <h2>Budget-Friendly Cheap CDR Writer for EA</h2>
+                  <p>
+                    The path of getting a successful Engineers Australia visa
+                    approval is paved with many elements, and the Competency
+                    Demonstration Report (CDR) stands as a cornerstone.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="budget-friendly-cdr-writer-for-ea"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/training-visa-subclass-407-visa.webp"
+                  alt="training visa subclass 407 visa australia"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p><i class="bi-calendar-week"> </i> Aug 11 2023</p>
+                  </div>
+                  <h2>Training Visa Subclass 407 Visa Australia</h2>
+                  <p>
+                    The Subclass 407 Visa, also known as the Training Visa, is a
+                    temporary visa offered by the Australian Government that
+                    allows you to participate in a range of occupational
+                    training, research, or professional development activities
+                    in Australia.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="training-visa-subclass-407-visa"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/regional-sponsored-migration-scheme-187-visa-australia.webp"
+                  alt="regional sponsored migration scheme subclass 187 visa australia"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p><i class="bi-calendar-week"> </i> Aug 10 2023</p>
+                  </div>
+                  <h2>
+                    Regional Sponsored Migration Scheme Subclass 187 Visa
+                    Australia
+                  </h2>
+                  <p>
+                    The Regional Sponsored Migration Scheme Visa Subclass 187 is
+                    a working visa that allows you to live and work in regional
+                    areas of Australia as a skilled worker with the employer’s
+                    nomination.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="regional-sponsored-migration-scheme-187-visa-australia"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/skilled-employer-sponsered-regional-494-visa.webp"
+                  alt="skilled employed sponsored regional subclass 494 visa australia"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p><i class="bi-calendar-week"> </i> Aug 10 2023</p>
+                  </div>
+                  <h2>
+                    Skilled Employer Sponsored Regional (Provisional) Subclass
+                    494 Visa Australia
+                  </h2>
+                  <p>
+                    The Subclass 494 Visa Australia is a working visa that
+                    allows you to study, work, or stay in Australia for a time
+                    period of five years.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="skilled-employer-sponsered-regional-494-visa"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/skilled-work-regional-491-visa.webp"
+                  alt="Skilled Work Regional Subclass 491 Visa Australia"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p><i class="bi-calendar-week"> </i> Aug 4 2023</p>
+                  </div>
+                  <h2>
+                    Skilled Work Regional (Provisional) Subclass 491 Visa
+                    Australia
+                  </h2>
+                  <p>
+                    Migrating abroad along with your family could probably be
+                    the wish for many. But not all countries provide you with
+                    such a feasible visa option.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="skilled-work-regional-491-visa"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/temporary-graduate-485-visa.webp"
+                  alt="Temporary Graduate Subclass 485 Visa Australia"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p><i class="bi-calendar-week"> </i> Aug 1 2023</p>
+                  </div>
+                  <h2>Temporary Graduate Subclass 485 Visa Australia</h2>
+                  <p>
+                    Temporary Graduate Subclass 485 Visa Australia is a Type of
+                    Work Visa for international students that allows you to
+                    remain in the country temporarily after completing your
+                    studies.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="temporary-graduate-485-visa"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/temporary-skill-shortage-482-visa.webp"
+                  alt="Temporary Skill Shortage Subclass 482 Visa Australia"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p><i class="bi-calendar-week"> </i> July 28 2023</p>
+                  </div>
+                  <h2>Temporary Skill Shortage Subclass 482 Visa Australia</h2>
+                  <p>
+                    If you are dreaming of an exciting career opportunity
+                    outside your home country then look no further than the
+                    temporary skill shortage visa (subclass 482 visa) in
+                    Australia. Being the land of opportunities, Australia is
+                    also a dream country for many individuals.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="temporary-skill-shortage-482-visa"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/state sponsored skilled-nominated-subclass-190-visa.webp"
+                  alt="Employer Nominated Scheme Subclass 186 visa"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p><i class="bi-calendar-week"> </i> July 07 2023</p>
+                  </div>
+                  <h2>
+                    State Sponsored Skilled Nominated Visa Subclass 190 Visa
+                  </h2>
+                  <p>
+                    Every year thousands of ambitious individuals migrate to
+                    Australia in search of better job prospects and career
+                    opportunities. These skilled workers come from various
+                    corners of the globe, driven by the allure of Australia's
+                    thriving economy, diverse workforce, and enviable quality of
+                    life.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="skilled-nominated-visa-subclass-190-visa"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/employer-nomination-scheme-186-visa.webp"
+                  alt="Employer Nominated Scheme Subclass 186 visa"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p><i class="bi-calendar-week"> </i> Jun 23 2023</p>
+                  </div>
+                  <h2>Employer Nominated Scheme Subclass 186 visa</h2>
+                  <p>
+                    The Employer Nomination Scheme (ENS) 186 visa is an
+                    Australian permanent resident visa designed for skilled
+                    workers. It allows you to work and live in Australia
+                    indefinitely, offering a pathway to Australian citizenship.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="employer-nomination-scheme-186-visa"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/types-of-skilled-migration-visa-to-australia-for-engineers.webp"
+                  alt="Types of Skilled Migration Visa to Australia for Engineers"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p><i class="bi-calendar-week"> </i> Jun 19 2023</p>
+                  </div>
+                  <h2>
+                    A Guide for Types of Skilled Migration Visa to Australia for
+                    International Engineers
+                  </h2>
+                  <p>
+                    Australia has developed various options of skilled migration
+                    visas focusing on international students and skilled
+                    workers. These visas are specifically tailored to provide
+                    opportunities for engineering students who have completed
+                    their studies and want to migrate permanently to Australia.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="types-of-skilled-migration-visa-to-australia-for-engineers"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/skill-assessment-validity.webp"
+                  alt="Skill assessment validiry for EA"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p><i class="bi-calendar-week"> </i> Jun 12 2023</p>
+                  </div>
+                  <h2>Skill Assessment Validity for Engineers Australia</h2>
+                  <p>
+                    Are you an engineer planning to migrate to Australia? If so,
+                    you've probably heard about the Skill Assessment process
+                    conducted by Engineers Australia. In this blog post, we'll
+                    delve into Skill Assessment validity for Engineers
+                    Australia, breaking it down into simple terms.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="skill-assessment-validity"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/tips-to-write-a-professional-resume-for-engineers-australia.webp"
+                  alt="Tips to write a professional resume for Engineers Australia"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p><i class="bi-calendar-week"> </i> Jun 07 2023</p>
+                  </div>
+                  <h2>
+                    Tips To Write A Professional Resume For Engineers Australia
+                  </h2>
+                  <p>
+                    Crafting a professional resume is a crucial step for
+                    engineers seeking opportunities in Australia. In this blog,
+                    we will provide valuable tips and guidance on how to create
+                    an impressive CV that meets the standards set by Engineers
+                    Australia.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="tips-to-write-a-professional-resume-for-engineers-australia"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/outcome-of-fast-track-and-normal-track-skills-assessment.webp"
+                  alt="fast track and normal track skills assessment"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p><i class="bi-calendar-week"> </i> Jun 01 2023</p>
+                  </div>
+                  <h2>
+                    What Is The Outcome Of The Fast Track And Normal Track
+                    Skills Assessment?
+                  </h2>
+                  <p>
+                    Are you planning to pursue a career in a skilled occupation?
+                    If so, you may already know the importance of a skills
+                    assessment to validate your qualifications and expertise.
+                    Engineers Australia skills assessments are crucial in
+                    various professional pathways, particularly for individuals
+                    aiming to migrate to countries like Australia under specific
+                    visa programs.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="outcome-of-fast-track-and-normal-track-skills-assessment"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/how-to-write-a-perfect-cv-for-engineers-australia.webp"
+                  alt="Perfect CV for Engineers Australia"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p><i class="bi-calendar-week"> </i> May 30 2023</p>
+                  </div>
+                  <h2>How to Write a Perfect CV for Engineers Australia?</h2>
+                  <p>
+                    When landing your dream job as an engineer in Australia, a
+                    carefully crafted curriculum vitae (CV) plays a crucial
+                    role. Your CV serves as a snapshot of your skills,
+                    qualifications, and experiences, showcasing your suitability
+                    for the position you desire.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="how-to-write-a-perfect-cv-for-engineers-australia"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/become-a-chartered-engineer.webp"
+                  alt="How to become a chartered engineer in Australia"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p><i class="bi-calendar-week"> </i> May 23 2023</p>
+                  </div>
+                  <h2>
+                    The Pathways to Becoming a chartered engineer in Australia
+                  </h2>
+                  <p>
+                    In this blog, we will walk you through the intricate
+                    pathways that lead to achieving the esteemed title of
+                    chartered engineer in Australia. Engineering is a dynamic
+                    field that plays a vital role in shaping the modern world.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="become-a-chartered-engineer"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/most-employable-degrees-in-australia.webp"
+                  alt="Most employable degrees in Australia for 2023"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p><i class="bi-calendar-week"> </i>May 11 2023</p>
+                  </div>
+                  <h2>Most Employable Degrees In Australia For 2023</h2>
+                  <p>
+                    Many students and graduates are looking to pursue careers
+                    that offer promising job prospects and opportunities for
+                    growth.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="most-employable-degrees-in-australia"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/ea-stage-1-competencies.webp"
+                  alt="EA Stage 1 Competencies"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p><i class="bi-calendar-week"> </i>Apr 20 2023</p>
+                  </div>
+                  <h2>EA Stage 1 Competencies</h2>
+                  <p>
+                    Engineers Australia is a professional body responsible for
+                    assessing the engineering qualifications and competencies of
+                    individuals in Australia.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="ea-stage-1-competencies"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/civil-engineer-victoria-registration-guidelines.webp"
+                  alt="Civil Engineers victoria registration guidelines 2023"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p><i class="bi-calendar-week"> </i>Apr 13 2023</p>
+                  </div>
+                  <h2>Civil Engineers victoria registration guidelines 2023</h2>
+                  <p>
+                    Are you a civil engineer interested in practicing your
+                    profession in Victoria, Australia? If so, you must undergo a
+                    competency assessment process to obtain registration as a
+                    civil engineer in this state.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="civil-engineer-victoria-registration-guidelines"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/electrical-engineer-victoria-registration-guidelines.webp"
+                  alt="Electrical Engineers victoria registration guidelines 2023"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p><i class="bi-calendar-week"> </i>Apr 10 2023</p>
+                  </div>
+                  <h2>
+                    Electrical Engineers victoria registration guidelines 2023
+                  </h2>
+                  <p>
+                    Are you an electrical or electronics engineer looking to
+                    work in Victoria, Australia? Do you know the guidelines for
+                    2023 Victorian registration for electrical and electronics
+                    engineers? You don’t have to worry we got you covered.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="electrical-engineer-victoria-registration-guidelines"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/acs-skills-assessment.webp"
+                  alt="ACS Skills Assessment for Skilled Migration to Australia"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p><i class="bi-calendar-week"> </i> Mar 26 2023</p>
+                  </div>
+                  <h2>
+                    ACS Skills Assessment for Skilled Migration to Australia
+                    2023
+                  </h2>
+                  <p>
+                    Australian Computer Society (ACS) is the main representative
+                    regarding IT/ICT in Australia. The Australian government has
+                    given them the responsibility of doing the skill assessment
+                    of the IT/ICT professional.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="acs-skills-assessment"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/ipenz-competence-assessment.webp"
+                  alt="ipenz competence assessment report"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p><i class="bi-calendar-week"> </i> Mar 15 2023</p>
+                  </div>
+                  <h2>
+                    IPENZ Competence Assessment for Skilled Migration New
+                    Zealand
+                  </h2>
+                  <p>
+                    The IPENZ (Institution of Professional Engineers New
+                    Zealand) Skilled Migration Assessment is a process that
+                    evaluates the qualifications and experience of engineers who
+                    wish to migrate to New Zealand under the Skilled Migrant
+                    Category of the country's immigration policy.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="ipenz-competence-assessment"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/employment-reference-letter-for-australian-immigration-sample.webp"
+                  alt="Employment reference letter Australian Immigration with Sample"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p><i class="bi-calendar-week"> </i> Mar 08 2023</p>
+                  </div>
+                  <h2>
+                    Employment reference letter Australian Immigration with
+                    Sample
+                  </h2>
+                  <p>
+                    An employment reference letter is a document written by an
+                    employer or supervisor on behalf of an employee, providing a
+                    detailed account of their work experience, job performance,
+                    and personal qualities.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="employment-reference-letter-for-australian-immigration-sample"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/engineers-australia-skills-assessment.webp"
+                  alt="Engineers Australia Skills Assessment for Migrant Engineers"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"> </i> By Aadya</p>
+                    <p>
+                      <i class="bi-calendar-week"> Mar 02 2023</i>
+                    </p>
+                  </div>
+                  <h2>
+                    Engineers Australia Skills Assessment for Migrant Engineers
+                  </h2>
+                  <p>
+                    Engineer Australia is the authorized body working for the
+                    professional advancement of the engineer sector in
+                    Australia.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="engineers-australia-skills-assessment"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/migration-skill-assessment-booklet-for-engineers-australia.webp"
+                  alt="Migration Skill Assessment (MSA) Booklet for Engineers
+                  Australia"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Feb 17 2023</p>
+                  </div>
+                  <h2>
+                    Migration Skill Assessment (MSA) Booklet for Engineers
+                    Australia
+                  </h2>
+                  <p>
+                    Engineers seeking permanent residency in Australia can have
+                    their skills evaluated through the Migration Skill
+                    Assessment. The Migration Skill Assessment (MSA) is a test
+                    that is used to evaluate applicants'...
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="migration-skill-assessment-booklet-for-engineers-australia"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/engineers-australia-assessment-fees.webp"
+                  alt="Engineers Australia Assessment Fees"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Feb 10 2023</p>
+                  </div>
+                  <h2>Engineers Australia Assessment Fees</h2>
+                  <p>
+                    Engineers Australia offers a skilled evaluation service to
+                    support you in obtaining a migration visa. Our fees include
+                    all expenses related to conducting this through evaluation
+                    of your qualifications.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="engineers-australia-assessment-fees"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/onshore-and-offshore-visa-application-process-in-australia.webp"
+                  alt="Difference between the Onshare and Offshore visa application
+                  process in Australia."
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Jan 27 2023</p>
+                  </div>
+                  <h2>
+                    Difference between the Onshore and Offshore visa application
+                    process in Australia.
+                  </h2>
+                  <p>
+                    With Australian Immigration, you have a variety of visa
+                    application options. Partner visas are one of many visa
+                    options, and they can be further divided into offshore and
+                    onshore visas.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="onshore-and-offshore-visa-application-process-in-australia"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/ner-work-experiences-statement-for-australia.webp"
+                  alt="NER Work Experiences Statement for Australia"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Jan 16 2023</p>
+                  </div>
+                  <h2>NER Work Experiences Statement for Australia</h2>
+                  <p>
+                    The full form of NER is the National Engineer Register. The
+                    National Engineer Register (NER) is a professional directory
+                    of engineers and engineering-related professionals
+                    registered with Engineering.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="ner-work-experiences-statement-for-australia"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/skilled-recognised-graduate-visa-476.webp"
+                  alt="skilled recognised graduate visa 476"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Jan 04 2023</p>
+                  </div>
+                  <h2>Skilled Recognised Graduate Subclass 476 Visa</h2>
+                  <p>
+                    Nothing can be more exciting for an individual who has an
+                    engineering degree than getting a job opportunity in
+                    Australia. It’s a country that focuses on a high standard of
+                    living, is known for its best culture with advanced
+                    technology, and offers the best wages.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="skilled-recognised-graduate-visa-476"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/free-fast-track-skill-assessment.webp"
+                  alt="Free Fast Track Skill Assessment"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Dec 28 2022</p>
+                  </div>
+                  <h2>Free Fast Track Skill Assessment</h2>
+                  <p>
+                    Engineers who possess an engineering degree from a country
+                    other than Australia and are not signatories under the
+                    Sydney Accord. Washing Accord, or the Dublin Accord, must
+                    undertake a Migration Skills Assessment (MSA) to qualify for
+                    working in Ausralia.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="free-fast-track-skill-assessment"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/10-ways-to-write-a-perfect-cdr.webp"
+                  alt="10 Ways To Write A Perfect CDR report for Engineers Australia"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Dec 23 2022</p>
+                  </div>
+                  <h2>
+                    10 Ways To Write a Perfect CDR report for Engineers
+                    Australia in 2023
+                  </h2>
+                  <p>
+                    CDR Report Writing can be challenging, demands a lot of time
+                    and does not guarantee results. Well, quite simply put, the
+                    odds are stacked against you. There are certain guidelines
+                    to adhere to for a perfect CDR writing...
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="10-ways-to-write-a-perfect-cdr"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/10-common-cdr-report-mistakes-for-skill-assessment.webp"
+                  alt="10 Common CDR Report Mistakes Made by Applicants for Skill Assessment"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Dec 18 2022</p>
+                  </div>
+                  <h2>
+                    10 Common CDR Report Mistakes Made by Applicants for Skill
+                    Assessment
+                  </h2>
+                  <p>
+                    The most crucial step in Australian Skilled Migration for
+                    engineers is preparing a standard CDR Report. The Competency
+                    Demonstration Report, or CDR, is a technical document that
+                    proves you are an engineer with...
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="10-common-cdr-report-mistakes-for-skill-assessment"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/cdr-report-for-electronics-engineers.webp"
+                  alt="CDR Report For Electronics Engineers - ANZSCO Code 233411"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Oct 29 2022</p>
+                  </div>
+                  <h2>
+                    CDR Report For Electronics Engineers - ANZSCO Code 233411
+                  </h2>
+                  <p>
+                    The immense diversity, development, infrastructure,
+                    elegance, and lifestyle that Australia offers make it one of
+                    the most developed nations, and engineering experts
+                    overwhelmingly like it.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="cdr-report-for-electronics-engineers"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/cdr-report-for-electrical-engineers.webp"
+                  alt="CDR Report For Electrical Engineers - ANZSCO Code 233311"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Oct 15 2022</p>
+                  </div>
+                  <h2>
+                    CDR Report For Electrical Engineers - ANZSCO Code 233311
+                  </h2>
+                  <p>
+                    An engineer's preferred location for employment and travel
+                    is Australia because it is one of the countries where
+                    immigrant professioals can earn high salaries.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="cdr-report-for-electrical-engineers"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/chartered-professional-engineers.webp"
+                  alt="Chartered perfessional Engineers (CPEng) Australia"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Oct 02 2022</p>
+                  </div>
+                  <h2>Chartered perfessional Engineers (CPEng) Australia</h2>
+                  <p>
+                    A Chartered Professional Engineer (CPEng) is someone who has
+                    demostrated their dedication, experience, and talents, as
+                    well as their knowledge of the field.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="chartered-professional-engineers"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/relationship-statement-for-partners-visa.webp"
+                  alt="How can a Relationship Statement be written for your Partner's Visa ?"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Sep 14 2022</p>
+                  </div>
+                  <h2>
+                    How can a Relationship Statement be written for your
+                    Partner's Visa ?
+                  </h2>
+                  <p>
+                    Australia has a long history of being viewed as a nation
+                    having a wide range of opprotunities. Furthermore, more and
+                    more people are traveling to Australia every day.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="relationship-statement-for-partners-visa"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/engineers-australia-chartered-competencies.webp"
+                  alt="Stage 2 chartered Compentencies for Engineers Australia"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Aug 29 2022</p>
+                  </div>
+                  <h2>
+                    Stage 2 chartered Compentencies for Engineers Australia
+                  </h2>
+                  <p>
+                    Professional enginners who are recognized as innovative,
+                    talented, and creative for a nation's growth are awarded
+                    chartership.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="engineers-australia-chartered-competencies"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/skillselect-eoi.webp"
+                  alt="What is SkillSelect EOI in Skilled Migration"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Aug 02 2022</p>
+                  </div>
+                  <h2>What is SkillSelect EOI in Skilled Migration</h2>
+                  <p>
+                    Everyone's attention has been drawn to the ongoing trend of
+                    talented professionals migrating to Australia. To obtain a
+                    skilled migration visa, applicants must go through a number
+                    of stages.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="skillselect-eoi"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/national-engineering-register.webp"
+                  alt="National Engineering Register by Enginners Australia"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Jul 17 2022</p>
+                  </div>
+                  <h2>National Engineering Register by Engineers Australia</h2>
+                  <p>
+                    The National Engineering Register (NER) is for engineers who
+                    desire to demonstrate their experise to the Australian
+                    engineering commnunity.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="national-engineering-register"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/prepare-your-cpd-for-cdr-report.webp"
+                  alt="Prepare your CPD for the CDR Report"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Jul 01 2022</p>
+                  </div>
+                  <h2>Prepare your CPD for the CDR Report</h2>
+                  <p>
+                    CPD programs aim to develop or upgrade enginners' study
+                    experience, information, or opinions to protect thier
+                    professional talents and increase workplace efficiency.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="prepare-your-cpd-for-cdr-report"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/employment-reference-letter-for-acs-rpl-report.webp"
+                  alt="Employment Reference Lettter for ACS RPL Reports"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Jun 21 2022</p>
+                  </div>
+                  <h2>Employment Reference Lettter for ACS RPL Reports</h2>
+                  <p>
+                    Before understanding what an employment reference letter is,
+                    let us recapitulate what the RPL report means and who needs
+                    to prepare the RPL report.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="employment-reference-letter-for-acs-rpl-report"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/cpd-statement-sample.webp"
+                  alt="CPD statement sample for CDR writers"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Jun 06 2022</p>
+                  </div>
+                  <h2>CPD statement sample for CDR writers</h2>
+                  <p>
+                    Continuing Professional Development (CPD) is a concept that
+                    allows you to maintain track of your skills and knowledge as
+                    you advance in your career.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="cpd-statement-sample"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/civil-engineer-skill-migration-australia.webp"
+                  alt="How to skill migrate to Australia as a Civil engineer?"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> May 30 2022</p>
+                  </div>
+                  <h2>
+                    How to skill migrate to Australia as a Civil engineer?
+                  </h2>
+                  <p>
+                    The Australian Government regards Civil Engineer as one
+                    occupation required to develop the Australian economy. As a
+                    result, the processing of Civil Engineer norminations and
+                    visa applications would take precedence.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="civil-engineer-skill-migration-australia"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/mechanical-engineers-cdr-reports.webp"
+                  alt="Everything to know about CDR Report for Mechanical Enginners"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> May 16 2022</p>
+                  </div>
+                  <h2>
+                    Everything to know about CDR Report for Mechanical Enginners
+                  </h2>
+                  <p>
+                    Mechanical engineers focus on the generation, distribution,
+                    and use of energy, as well as the processing of materials,
+                    manufacturing system control and automation, machine design
+                    and development, and environmental changes.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="mechanical-engineers-cdr-reports"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/skillselect-australia.webp"
+                  alt="What is Skillselect Australia And its Visa Categories ?"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Apr 22 2022</p>
+                  </div>
+                  <h2>
+                    What is Skillselect Australia And its Visa Categories ?
+                  </h2>
+                  <p>
+                    SkillSelect is an Australian immigration program that
+                    connects skilled international employees with employers in
+                    Australia.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="skillselect-australia"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/top-10-engineering-jobs-in-australia.webp"
+                  alt="Top 10 Engineering Jobs in Australia 2023"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Mar 29 2022</p>
+                  </div>
+                  <h2>Top 10 Engineering Jobs in Australia 2023</h2>
+                  <p>
+                    The Land of Opportunities- Australia, we might have heard
+                    this word hundreds of times. In this rapidly evolving world
+                    where an engineering profession is becoming a more pivotal
+                    field that drives innovation and progress, Australia is a
+                    perfect country that offers the best career options for you.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="top-10-engineering-jobs-in-australia"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/skilled-independent-visa-189.webp"
+                  alt="Skilled Independent Visa Subclass 189"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Mar 12 2022</p>
+                  </div>
+                  <h2>Skilled Independent Visa Subclass 189</h2>
+                  <p>
+                    Skilled Independent Visa is also known as Visa subclass 189.
+                    It is a permanent residency for workers who are not
+                    sponsored by an employer, family members, or a state or
+                    territory. Designed specifically for independent migrants,
+                    this visa pathway allows individuals to migrate to Australia
+                    based on a point-based system.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="skilled-independent-visa-189"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/skilled-occupation-list-australia.webp"
+                  alt="Skilled Occupation List Australia 2023"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Feb 02 2022</p>
+                  </div>
+                  <h2>Skilled Occupation List Australia 2023</h2>
+                  <p>
+                    The Skilled Occupation List Australia 2023 lists the current
+                    occupations that are qualified for various visa
+                    classifications.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="skilled-occupation-list-australia"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/skills-assessment-pathways-for-engineers.webp"
+                  alt="Application Pathways for Migration Skills Assessment"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Jan 24 2022</p>
+                  </div>
+                  <h2>Application Pathways for Migration Skills Assessment</h2>
+                  <p>
+                    If an Engineer wants to apply for a Australian PR Visa for
+                    Skilled Migration, then applying for the Migration Skills
+                    Assessment (MSA) programs is the best choice
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="skills-assessment-pathways-for-engineers"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/document-checklist-for-acs-skill-assessment.webp"
+                  alt="Document Checklist for ACS Skill Assessment"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Dec 12 2021</p>
+                  </div>
+                  <h2>Complete Document Checklist for ACS Skill Assessment</h2>
+                  <p>
+                    One of the services that ACS (Australian Computer Society)
+                    provides is a skills assessment process for individuals who
+                    are seeking to migrate to Australia under the skilled
+                    migration program.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="document-checklist-for-acs-skill-assessment"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/anzsco-skill-level-classification.webp"
+                  alt="ANZSCO SKill Level Classification"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Nov 19 2021</p>
+                  </div>
+                  <h2>ANZSCO SKill Level Classification</h2>
+                  <p>
+                    The ANZSCO stands for Australian and New Zealand Standard
+                    Classification of Occupations. The joint effort of the
+                    Australian Bureau of Statistics (ABS), Statistics New
+                    Zealand, and Department of Education and Training developed
+                    it.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="anzsco-skill-level-classification"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/how-to-write-acs-rpl-report.webp"
+                  alt="How to write an ACS RPL report on your own ?"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Nov 01 2021</p>
+                  </div>
+                  <h2>How to write an ACS RPL report on your own ?</h2>
+                  <p>
+                    ACS RPL Report is the ultimate answer for you if you lack a
+                    formal ICT qualification but want to make a skilled
+                    migration to Australia. It is a document submitted to the
+                    Australian Computer Society for evaluation.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="how-to-write-acs-rpl-report"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/skilled-migration-to-australia-with-pr.webp"
+                  alt="All About Skilled Migration to Australia with PR Visa"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Oct 16 2021</p>
+                  </div>
+                  <h2>All About Skilled Migration to Australia with PR Visa</h2>
+                  <p>
+                    Once you have acquired an Australian PR, you are usually
+                    garanted a 5 years-travel facility of time where you can
+                    freely move in and out of Australia.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="skilled-migration-to-australia-with-pr"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/cdr-report-writers-india.webp"
+                  alt="Why do engineers in India choose us for CDR writing ?"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Oct 01 2021</p>
+                  </div>
+                  <h2>Why do engineers in India choose us for CDR writing ?</h2>
+                  <p>
+                    While we aim to provide our services to engineers worldwide,
+                    engineers from India are our promary customers. We have had
+                    over 70% of customers based in India.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="cdr-report-writers-india"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/mltssl-medium-long-term-strategic-skills-list-2022.webp"
+                  alt="Medium and Long-Term Strategic Skills List (MLTSSL)"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Sep 15 2021</p>
+                  </div>
+                  <h2>
+                    Medium and Long-Term Strategic Skills List (MLTSSL) - 2023
+                  </h2>
+                  <p>
+                    The first and foremost thing to consider is making sure your
+                    occupation is on the Combined List of Eligible Skilled
+                    Occupations before applying for the Temporary Skill Shortage
+                    Visa (TSS Visa) subclass 482.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="mltssl-medium-long-term-strategic-skills-list-2022"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/should-i-hire-an-expert-or-write-my-own-cdr.webp"
+                  alt="Should I Hire an Expert or write my own CDR ?"
+                />
+                <div class="card-body">
+                  <div class="blog-author">
+                    <p><i class="bi-person"></i> By Aadya</p>
+                    <p><i class="bi-calendar-week"></i> Sep 03 2021</p>
+                  </div>
+                  <h2>Should I Hire an Expert or write my own CDR ?</h2>
+                  <p>
+                    This might have been the biggest dilemma for everyone who
+                    has approached us. Most of the Engineers who have completed
+                    their bachelor's degree or the masters' Degree are confused
+                    about how to get started with the process. test.
+                  </p>
+                  <hr />
+                  <a
+                    target="_blank"
+                    href="should-i-hire-an-expert-or-write-my-own-cdr"
+                    class="stretched-link"
+                    >More Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <button
+        class="go-to-top-btn"
+        onclick="goToTop()"
+        id="goToTop"
+        aria-label="Go to Top Button"
+      >
+        <i class="bi-arrow-up"></i>
+      </button>
+      <section id="whatsapp-chat">
+        <div class="container">
+          <button
+            type="button"
+            onclick="show()"
+            class="fixed-whatsapp-icon"
+            aria-label="Whatsapp Popup button"
+          >
+            <i class="bi bi-whatsapp"></i>
+          </button>
+          <div class="row">
+            <div
+              class="col-11 col-md-5 col-lg-3 whatsapp-card"
+              id="showWhatsapp"
+              style="visibility: hidden"
+            >
+              <div class="card">
+                <div class="card-header">
+                  <div class="chat-icon">
+                    <i class="bi bi-wechat"></i>
+                  </div>
+                  <div class="chat-person">
+                    <p>Aadya Sharma</p>
+                    <p>Text Us in Whatsapp</p>
+                  </div>
+                  <button
+                    type="button"
+                    onclick="closeWhatsapp()"
+                    class="btn-close btn-close-white"
+                  ></button>
+                </div>
+                <div class="card-body">
+                  <p class="text-box">
+                    <span>Aadya Sharma</span><br />
+                    Hi, there!<br />
+                    How can I help you?
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a
+                    href="https://wa.link/o9z7o4"
+                    target="_blank"
+                    class="whatsapp-start-chat-btn"
+                  >
+                    <i class="bi-whatsapp me-3"></i>Start Chat
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-form">
+        <div class="container">
+          <div class="section-heading">
+            <h3>Contact Us</h3>
+          </div>
+          <div class="row g-4 g-md-5 g-lg-0">
+            <div class="col-12 col-lg-8 contact-form__form">
+              <div class="card">
+                <div class="card-body">
+                  <form id="submitFooter" action="#">
+                    <div class="row g-4 g-md-5">
+                      <div class="col-12 col-md-4">
+                        <label for="nameFooter">Full Name*</label>
+                        <input
+                          type="text"
+                          name="Name"
+                          id="nameFooter"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <label for="emailFooter">Email*</label>
+                        <input
+                          type="email"
+                          name="Email"
+                          id="emailFooter"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <label for="phoneFooter">Phone Number*</label>
+                        <input
+                          type="tel"
+                          name="Number"
+                          id="phoneFooter"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                      <div class="col-12 col-md-12">
+                        <label for="messageFooter">Message</label>
+                        <textarea
+                          name="Message"
+                          id="messageFooter"
+                          class="form-control"
+                        ></textarea>
+                      </div>
+                      <button class="btn-all">Send Message</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 contact-form__info">
+              <div class="card">
+                <div class="card-body">
+                  <ul>
+                    <li>
+                      <i class="bi-telephone-outbound"></i>
+                      <a href="tel:+61 480097490" target="_blank"
+                        >+61 480097490</a
+                      >
+                    </li>
+                    <li>
+                      <i class="bi-envelope"></i>
+                      <a href="mailto:aadhyasharma469@gmail.com"
+                        >aadhyasharma469@gmail.com</a
+                      >
+                    </li>
+                    <li>
+                      <i class="bi-geo-alt"></i>Parramatta NSW 2150 Australia
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer-links">
+        <div class="container-fluid">
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-2 footer-links__about-us">
+              <div class="card">
+                <div class="card-body">
+                  <a href="/" aria-label="CDR Writer Australia Logo"
+                    ><img
+                      src="./img/cdr-writer-australia-logo.webp"
+                      alt="CDR Writer Australia Logo"
+                  /></a>
+                </div>
+              </div>
+              <p>
+                CDRWriterAustralia.com is neither affiliated with nor endorsed
+                by Engineers Australia.
+                <a href="about-us">Learn More About Us.</a>
+              </p>
+              <p>Follow Us On:</p>
+              <ol>
+                <li>
+                  <a
+                    href="https://www.facebook.com/cdrwriteraustralia"
+                    target="_blank"
+                    aria-label="Facebook Link of CDR Writer Australia"
+                    ><i class="bi-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://wa.link/o9z7o4"
+                    target="_blank"
+                    aria-label="Whatsapp Link of CDR Writer Australia"
+                    ><i class="bi bi-whatsapp"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/cdrwriteraustralia"
+                    target="_blank"
+                    aria-label="Linkedin Link of CDR Writer Australia"
+                    ><i class="bi bi-linkedin"></i>
+                  </a>
+                </li>
+              </ol>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-2 footer-links__useful-links d-none d-md-block"
+            >
+              <h4>Useful Link</h4>
+              <ul>
+                <li><a href="anzsco-codes">ANZSCO Codes</a></li>
+                <li><a href="cdr-report-samples">CDR Samples</a></li>
+
+                <li><a href="pricing">Pricing</a></li>
+                <li>
+                  <a href="australia-pr-points-calculator"
+                    >PR Point Calculator</a
+                  >
+                </li>
+                <li><a href="contact">Contact</a></li>
+                <li>
+                  <a href="https://wa.link/o9z7o4" target="_blank"
+                    >Ask an Expert</a
+                  >
+                </li>
+                <li>
+                  <a href="terms-of-use">Terms of Use</a>
+                </li>
+                <li>
+                  <a href="privacy-policy">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="refund-and-cancellation-policy"
+                    >Refund and Cancellation Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 footer-links__useful-links d-md-none">
+              <div class="accordion" id="accordionExample1">
+                <div class="accordion-item">
+                  <h4 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne1"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Useful Link
+                    </button>
+                  </h4>
+                  <div
+                    id="collapseOne1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample1"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li><a href="anzsco-codes">ANZSCO Codes</a></li>
+                        <li><a href="cdr-report-samples">CDR Samples</a></li>
+
+                        <li><a href="pricing">Pricing</a></li>
+                        <li>
+                          <a href="australia-pr-points-calculator"
+                            >PR Point Calculator</a
+                          >
+                        </li>
+                        <li><a href="contact">Contact</a></li>
+                        <li>
+                          <a href="https://wa.link/o9z7o4" target="_blank"
+                            >Ask an Expert</a
+                          >
+                        </li>
+                        <li>
+                          <a href="terms-of-use">Terms of Use</a>
+                        </li>
+                        <li>
+                          <a href="privacy-policy">Privacy Policy</a>
+                        </li>
+                        <li>
+                          <a href="refund-and-cancellation-policy"
+                            >Refund and Cancellation Policy</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-3 footer-links__services d-none d-md-block"
+            >
+              <h4>Services</h4>
+              <ul>
+                <li><a href="services">All CDR Services</a></li>
+                <li><a href="cdr-report-writing">CDR Report Writing</a></li>
+
+                <li>
+                  <a href="career-episode-writing">Career Episode Writing</a>
+                </li>
+                <li>
+                  <a href="summary-statement-writing"
+                    >Summary Statement Writing</a
+                  >
+                </li>
+                <li>
+                  <a href="cdr-review-service">CDR Review Service</a>
+                </li>
+                <li><a href="stage-2-cdr-writing">Stage 2 CDR Writing</a></li>
+                <li>
+                  <a href="stage-2-competency-claims-writing"
+                    >Stage 2 Competency Claims Writing</a
+                  >
+                </li>
+                <li>
+                  <a href="cdr-stage-2-review">CDR Stage 2 Review Service</a>
+                </li>
+                <li><a href="rpl-report-writing">RPL Report Writing</a></li>
+                <li><a href="rpl-review-service">RPL Review Service</a></li>
+                <li>
+                  <a href="ka02-report-writing">KA02 Report Writing</a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-3 footer-links__services d-md-none"
+            >
+              <div class="accordion" id="accordionExample2">
+                <div class="accordion-item">
+                  <h4 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo2"
+                      aria-expanded="true"
+                      aria-controls="collapseTwo"
+                    >
+                      Services
+                    </button>
+                  </h4>
+                  <div
+                    id="collapseTwo2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample2"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li><a href="services">All CDR Services</a></li>
+                        <li>
+                          <a href="cdr-report-writing">CDR Report Writing</a>
+                        </li>
+
+                        <li>
+                          <a href="career-episode-writing"
+                            >Career Episode Writing</a
+                          >
+                        </li>
+                        <li>
+                          <a href="summary-statement-writing"
+                            >Summary Statement Writing</a
+                          >
+                        </li>
+                        <li>
+                          <a href="cdr-review-service">CDR Review Service</a>
+                        </li>
+                        <li>
+                          <a href="stage-2-cdr-writing">Stage 2 CDR Writing</a>
+                        </li>
+                        <li>
+                          <a href="stage-2-competency-claims-writing"
+                            >Stage 2 Competency Claims Writing</a
+                          >
+                        </li>
+                        <li>
+                          <a href="cdr-stage-2-review"
+                            >CDR Stage 2 Review Service</a
+                          >
+                        </li>
+                        <li>
+                          <a href="rpl-report-writing">RPL Report Writing</a>
+                        </li>
+                        <li>
+                          <a href="rpl-review-service">RPL Review Service</a>
+                        </li>
+                        <li>
+                          <a href="ka02-report-writing">KA02 Report Writing</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 footer-links__blogs d-none d-md-block"
+            >
+              <h4>Blogs</h4>
+              <ul>
+                <li>
+                  <a href="mltssl-medium-long-term-strategic-skills-list-2022"
+                    >Medium and Long-Term Strategic Skills List (MLTSSL) -
+                    2023</a
+                  >
+                </li>
+                <li>
+                  <a href="national-engineering-register"
+                    >What is National Engineering Register (NER)</a
+                  >
+                </li>
+                <li>
+                  <a href="cpd-statement-sample"
+                    >CPD Statement Sample for CDR Writers
+                  </a>
+                </li>
+                <li>
+                  <a href="cdr-report-for-electrical-engineers"
+                    >CDR Report For Electrical Engineers - ANZSCO Code 233311</a
+                  >
+                </li>
+                <li>
+                  <a href="top-10-engineering-jobs-in-australia"
+                    >Top 10 Engineering Jobs in Australia for 2022 / 2023</a
+                  >
+                </li>
+                <li>
+                  <a href="acs-skills-assessment">ACS Skills Assessment</a>
+                </li>
+                <li>
+                  <a href="engineers-australia-skills-assessment"
+                    >Engineers Australia Skills Assessment</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-3 footer-links__services d-md-none"
+            >
+              <div class="accordion" id="accordionExample3">
+                <div class="accordion-item">
+                  <h4 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree3"
+                      aria-expanded="true"
+                      aria-controls="collapseThree"
+                    >
+                      Blogs
+                    </button>
+                  </h4>
+                  <div
+                    id="collapseThree3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample3"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="mltssl-medium-long-term-strategic-skills-list-2022"
+                            >Medium and Long-Term Strategic Skills List (MLTSSL)
+                            - 2023</a
+                          >
+                        </li>
+                        <li>
+                          <a href="national-engineering-register"
+                            >What is National Engineering Register (NER)</a
+                          >
+                        </li>
+                        <li>
+                          <a href="cpd-statement-sample"
+                            >CPD Statement Sample for CDR Writers
+                          </a>
+                        </li>
+                        <li>
+                          <a href="cdr-report-for-electrical-engineers"
+                            >CDR Report For Electrical Engineers - ANZSCO Code
+                            233311</a
+                          >
+                        </li>
+                        <li>
+                          <a href="top-10-engineering-jobs-in-australia"
+                            >Top 10 Engineering Jobs in Australia for 2022 /
+                            2023</a
+                          >
+                        </li>
+                        <li>
+                          <a href="acs-skills-assessment"
+                            >ACS Skills Assessment</a
+                          >
+                        </li>
+                        <li>
+                          <a href="engineers-australia-skills-assessment"
+                            >Engineers Australia Skills Assessment</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="copyrights">
+            Copyrights 2024 ©All Rights Reserved - CDR Writer Australia
+          </p>
+        </div>
+      </section>
+    </footer>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.cdrwriteraustralia.com/blog"
+        },
+        "headline": "Recent Blogs | CDR Writers Australia",
+        "description": "Find out more about skilled migration and CDR for Engineers Australia. Learn about CDR writing techniques, skill evaluation and more in our blogs.",
+        "author": {
+          "@type": "Organization",
+          "name": "CDR Writer Australia",
+          "url": "https://www.cdrwriteraustralia.com"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "CDR Writer Australia",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.cdrwriteraustralia.com/img/cdr-writer-australia-logo.webp"
+          }
+        },
+        "datePublished": "2023-09-25"
+      }
+    </script>
+    <script type="text/javascript" src="./main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

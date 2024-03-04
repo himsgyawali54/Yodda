@@ -1,0 +1,1828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Australia PR points Calculator | Australian Immigration</title>
+    <meta
+      content="Our Australia PR points calculator will help you calculate points for various subclass visas to determine your chances of obtaining a Skilled visa."
+      name="description"
+    />
+    <link
+      rel="canonical"
+      href="https://www.cdrwriteraustralia.com/australia-pr-points-calculator"
+    />
+    <link href="./img/cdr-writer-australia-logo-favicon.webp" rel="icon" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <style>
+      .pr-points-calculator .form-select {
+        font-size: var(--h3-fontsize);
+        border-color: var(--color-primary);
+      }
+
+      .pr-points-calculator .form-control {
+        font-size: var(--h3-fontsize);
+        border-color: var(--color-primary);
+      }
+
+      .pr-points-calculator .card {
+        border-color: var(--color-primary);
+        padding: 1.5rem;
+      }
+
+      .pr-points-calculator .form-label {
+        font-size: var(--h4-fontsize);
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+      }
+
+      .pr-points-calculator i {
+        padding-right: 0.5rem;
+        color: var(--color-primary);
+      }
+    </style>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </head>
+
+  <body>
+    <header class="fixed-top" id="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-top">
+          <a class="navbar-brand order-0" href="/">
+            <img
+              class="logo"
+              src="./img/cdr-writer-australia-logo.webp"
+              alt="CDR Writer Australia Logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler order-2 order-lg-1"
+            type="button"
+            tabindex="0"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse order-2 order-lg-1"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto gap-lg-5">
+              <li class="nav-item">
+                <a class="nav-link" href="about-us">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <span
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  tabindex="0"
+                  data-bs-auto-close="outside"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </span>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="services"
+                      >All CDR Services</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="cdr-report-writing"
+                      >CDR Report Writing</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="career-episode-writing"
+                      >Career Episode Writing</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="summary-statement-writing"
+                      >Summary Statement Writing</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="cdr-review-service">
+                      CDR Review Service</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="stage-2-cdr-writing">
+                      Stage 2 CDR Writing</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="stage-2-competency-claims-writing"
+                    >
+                      Stage 2 Competency Claims Writing</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/cdr-stage-2-review">
+                      CDR Stage 2 Review Service</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="rpl-report-writing"
+                      >RPL Report Writing</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="rpl-review-service"
+                      >RPL Review Service</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="ka02-report-writing"
+                      >KA02 Report Writing</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <span
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  tabindex="0"
+                  data-bs-auto-close="outside"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  ANZSCO
+                </span>
+                <ul class="dropdown-menu">
+                  <li class="sub-dropdown">
+                    <span
+                      class="dropdown-item dropdown-toggle d-lg-none"
+                      data-bs-toggle="dropdown"
+                      role="button"
+                      tabindex="0"
+                    >
+                      ANZSCO Codes CDR
+                    </span>
+
+                    <a
+                      class="dropdown-item dropdown-toggle d-none d-lg-block"
+                      href="anzsco-codes"
+                    >
+                      ANZSCO Codes CDR
+                    </a>
+                    <div class="dropdown-menu row row-cols-1 row-cols-lg-3">
+                      <p class="d-lg-none">
+                        <a href="anzsco-codes"
+                          >Full List of ANZSCO Codes CDR
+                        </a>
+                      </p>
+                      <div class="col">
+                        <p>UNIT GROUP 1332</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/engineering-manager-133211">
+                              Engineering Manager ANZSCO 133211</a
+                            >
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2331</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/chemical-engineer-233111">
+                              Chemical Engineer ANZSCO 233111</a
+                            >
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/materials-engineer-233112">
+                              Materials Engineer ANZSCO 233112</a
+                            >
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2332</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/civil-engineer-233211">
+                              Civil Engineer ANZSCO 233211</a
+                            >
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/geotechnical-engineer-233212"
+                              >Geotechnical Engineer ANZSCO 233212
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/structural-engineer-233214"
+                              >Structural Engineer ANZSCO 233214
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/transport-engineer-233215"
+                              >Transport Engineer ANZSCO 233215
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2333</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/electrical-engineer-233311"
+                              >Electrical Engineer ANZSCO 233311
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2334</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/electronics-engineer-233411"
+                              >Electronics Engineer ANZSCO 233411
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <p>UNIT GROUP 2335</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/industrial-engineer-233511"
+                              >Industrial Engineer ANZSCO 233511
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/mechanical-engineer-233512"
+                              >Mechanical Engineer ANZSCO 233512
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/production-engineer-233513">
+                              Production Engineer ANZSCO 233513
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2336</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/mining-engineer-233611"
+                              >Mining Engineer ANZSCO 233611
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/petroleum-engineer-233612"
+                              >Petroleum Engineer ANZSCO 233612
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2339</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/aeronautical-engineer-233911">
+                              Aeronautical Engineer ANZSCO 233911
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/agricultural-engineer-233912"
+                              >Agricultural Engineer ANZSCO 233912
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/biomedical-engineer-233913"
+                              >Biomedical Engineer ANZSCO 233913
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/engineering-technologist-233914"
+                              >Engineering Technologist ANZSCO 233914
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/environmental-engineer-233915"
+                              >Environmental Engineer ANZSCO 233915
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/engineering-professionals-nec-233999"
+                              >Engineering Professional ANZSCO 233999
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <p>UNIT GROUP 2633</p>
+                        <ul>
+                          <li>
+                            <a
+                              href="anzsco-codes/telecommunication-engineer-263311"
+                              >Telecommunication Engineer ANZSCO 263311
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/telecommunication-network-engineer-263312"
+                              >Telecommunication Network Engineer ANZSCO 263312
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 3122</p>
+                        <ul>
+                          <li>
+                            <a
+                              href="anzsco-codes/civil-engineering-draftsperson-312211"
+                              >Civil Engineering Draftsperson ANZSCO 312211
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/civil-engineering-technician-312212"
+                              >Civil Engineering Technician ANZSCO 312212
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 3123</p>
+                        <ul>
+                          <li>
+                            <a
+                              href="anzsco-codes/electrical-engineering-draftsperson-312311"
+                              >Electrical Engineering Draftsperson ANZSCO 312311
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/electrical-engineering-technician-312312"
+                              >Electrical Engineering Technician ANZSCO 312312
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 3132</p>
+                        <ul>
+                          <li>
+                            <a
+                              href="anzsco-codes/telecommunications-field-engineer-313212"
+                              >Telecommunications Field Engineer ANZSCO 313212
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="sub-dropdown">
+                    <span
+                      class="dropdown-item dropdown-toggle d-lg-none"
+                      data-bs-toggle="dropdown"
+                      role="button"
+                      tabindex="0"
+                    >
+                      ACS ANZSCO Code
+                    </span>
+                    <a
+                      class="dropdown-item dropdown-toggle d-none d-lg-block"
+                      href="acs-anzsco-code"
+                    >
+                      ACS ANZSCO Code
+                    </a>
+                    <div class="dropdown-menu row row-cols-1 row-cols-lg-3">
+                      <p class="d-lg-none">
+                        <a href="acs-anzsco-code"
+                          >Full List of ACS ANZSCO Code
+                        </a>
+                      </p>
+                      <div class="col">
+                        <p>UNIT GROUP 1351</p>
+                        <ul>
+                          <li>
+                            <a
+                              href="anzsco-codes/chief-information-officer-135111"
+                            >
+                              Chief Information Officer ANZSCO 135111</a
+                            >
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/ict-project-manager-135112">
+                              ICT Project Manager ANZSCO 135112</a
+                            >
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/ict-managers-nec-135199">
+                              ICT Managers nec ANZSCO 135199</a
+                            >
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2232</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/ict-trainer-223211">
+                              ICT Trainer ANZSCO 223211</a
+                            >
+                          </li>
+                        </ul>
+
+                        <p>UNIT GROUP 2611</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/ict-business-analyst-261111"
+                              >ICT Business Analyst ANZSCO 261111
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/system-analyst-261112"
+                              >System Analyst ANZSCO 261112
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2612</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/multimedia-specialist-261211"
+                              >Multimedia Specialist ANZSCO 261211
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/web-developer-261212"
+                              >Web Developer ANZSCO 261212
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <p>UNIT GROUP 2613</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/analyst-programmer-261311"
+                              >Analyst Programmer ANZSCO 261311
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/developer-programmer-261312"
+                              >Developer Programmer ANZSCO 261312
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/software-engineer-261313">
+                              Software Engineer ANZSCO 261313
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/software-tester-261314">
+                              Software Tester ANZSCO 261314
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/software-and-applications-programmer-nec-261399"
+                            >
+                              Software and Applications Programmer<br />
+                              nec ANZSCO 261399
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2621</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/database-administrator-262111"
+                              >Database Administrator ANZSCO 262111
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/ict-security-specialist-262112"
+                              >ICT Security Specialist ANZSCO 262112
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/systems-administrator-262113"
+                              >Systems Administrator ANZSCO 262113
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <p>UNIT GROUP 2631</p>
+                        <ul>
+                          <li>
+                            <a
+                              href="anzsco-codes/computer-network-and-systems-engineer-263111"
+                              >Computer Network and Systems Engineer ANZSCO
+                              263111
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/network-administrator-263112"
+                              >Network Administrator ANZSCO 263112
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/network-analyst-263113"
+                              >Network Analyst ANZSCO 263113
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2632</p>
+                        <ul>
+                          <li>
+                            <a
+                              href="anzsco-codes/ict-quality-assurance-engineer-263211"
+                              >ICT Quality Assurance Engineer ANZSCO 263211
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/ict-support-engineer-263212"
+                              >ICT Support Engineer ANZSCO 263212
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/ict-systems-test-engineer-263213"
+                              >ICT Systems Test Engineer ANZSCO 263213
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/ict-support-and-test-engineers-nec-263299"
+                              >ICT Support and Test Engineers nec ANZSCO 263299
+                            </a>
+                          </li>
+                        </ul>
+
+                        <p>UNIT GROUP 3131</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/web-administrator-313113"
+                              >Web Administrator ANZSCO 313113
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cdr-report-samples">CDR Samples</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <a
+            href="tel:+61 480097490"
+            class="btn-all order-1 order-lg-2"
+            aria-label="Phone Number of CDRWriterAustralia"
+            ><i class="bi-telephone-outbound-fill"></i>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="breadcrumbs">
+            <p>Australia <span>PR Points Calculator</span></p>
+            <ul>
+              <li><a href="/">Home</a> &raquo</li>
+              <li>Australia PR Points Calculator</li>
+            </ul>
+          </div>
+          <div class="row g-4 g-md-5">
+            <div class="col-12 col-md-12 col-lg-8">
+              <h1>
+                Engineering Australia <span>PR Points Calculator</span> 2023
+              </h1>
+              <p>
+                Get an accurate assessment of your PR points with our PR points
+                calculator.
+              </p>
+              <ul>
+                <li><i class="bi-terminal-split"></i>Accurate</li>
+                <li><i class="bi-person-hearts"></i>User Friendly</li>
+                <li><i class="bi-capslock"></i>Updated</li>
+              </ul>
+              <a class="btn-all" href="https://wa.link/o9z7o4" target="_blank"
+                >Lets Chat</a
+              >
+            </div>
+            <div class="form-col col-12 col-md-6 col-lg-4">
+              <span class="triangle-1"></span>
+              <span class="triangle-2"></span>
+              <div class="card">
+                <div class="card-body">
+                  <form id="submitHero" action="#">
+                    <span>Get Free Consultation</span>
+                    <div class="form-input">
+                      <label for="NameHero" class="form-label">Name</label>
+                      <input
+                        type="text"
+                        name="Name"
+                        id="NameHero"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="form-input">
+                      <label for="EmailHero" class="form-label">Email</label>
+                      <input
+                        type="text"
+                        name="Email"
+                        id="EmailHero"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="form-input">
+                      <label for="NumberHero" class="form-label">Number</label>
+                      <input
+                        type="text"
+                        name="Phone"
+                        id="NumberHero"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="form-input">
+                      <label for="MessageHero" class="form-label"
+                        >Message</label
+                      >
+                      <textarea
+                        name="Message"
+                        class="form-control"
+                        id="MessageHero"
+                      ></textarea>
+                    </div>
+                    <button type="submit" class="btn-all form-submit-btn">
+                      Send Message
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pr-points-calculator">
+        <div class="section-heading">
+          <h2>Calculate Your Points For PR Eligibility in Australia-2023</h2>
+        </div>
+        <div class="container text-center">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="card">
+                <form action="#">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <label class="form-label" for="yourAge"
+                        ><i class="bi bi-clock"></i>Your Age:</label
+                      >
+                      <select class="form-select" id="yourAge" name="yourAge">
+                        <option selected></option>
+                        <option value="25">18-24</option>
+                        <option value="30">25-32</option>
+                        <option value="25">33-39</option>
+                        <option value="15">40-44</option>
+                      </select>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label class="form-label" for="englishLanguageSkill"
+                        ><i class="bi-book"></i>English language skills:</label
+                      >
+                      <select
+                        class="form-select"
+                        id="englishLanguageSkill"
+                        name="englishLanguageSkill"
+                      >
+                        <option selected></option>
+                        <option value="0">Competent English</option>
+                        <option value="10">Proficient English</option>
+                        <option value="20">Superior English</option>
+                      </select>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label
+                        class="form-label"
+                        for="skilledEmployentOutsideAustralia"
+                        ><i class="bi bi-person"></i>Skilled Employment in the
+                        last 10-years-outside Australia:</label
+                      >
+                      <select
+                        class="form-select"
+                        id="skilledEmployentOutsideAustralia"
+                        name="skilledEmployentOutsideAustralia"
+                      >
+                        <option selected></option>
+                        <option value="0">Less than 3 years</option>
+                        <option value="5">3-4 years</option>
+                        <option value="10">5-7 years</option>
+                        <option value="15">8-10 years</option>
+                      </select>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label
+                        class="form-label"
+                        for="skilledEmployentInsideAustralia"
+                        ><i class="bi bi-person-check"></i>Skilled Employment in
+                        the last 10-years-in Australia:</label
+                      >
+                      <select
+                        class="form-select"
+                        id="skilledEmployentInsideAustralia"
+                        name="skilledEmployentInsideAustralia"
+                      >
+                        <option selected></option>
+                        <option value="0">Less than 1 years</option>
+                        <option value="5">1-2 years</option>
+                        <option value="10">3-4 years</option>
+                        <option value="15">5-7 years</option>
+                        <option value="20">8-10 years</option>
+                      </select>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label class="form-label" for="qualification"
+                        ><i class="bi-book"></i>Qualification:</label
+                      >
+                      <select
+                        class="form-select"
+                        id="qualification"
+                        name="qualification"
+                      >
+                        <option selected></option>
+                        <option value="20">PHD or Overseas Equivalent</option>
+                        <option value="15">
+                          Bachelor or Overseas Equivalent
+                        </option>
+                        <option value="10">
+                          Diploma or trade certificate completed in Australia
+                        </option>
+                        <option value="10">
+                          Award Recognized by the Skills Assessing Authority
+                        </option>
+                      </select>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label class="form-label" for="australianStudyRequirement"
+                        ><i class="bi bi-building"></i>Australian Study
+                        Requirement:</label
+                      >
+                      <select
+                        class="form-select"
+                        id="australianStudyRequirement"
+                        name="australianStudyRequirement"
+                      >
+                        <option selected></option>
+                        <option value="0">No</option>
+                        <option value="5">
+                          Degree, Diploma or Trade Certificate that meets 2
+                          years study req.
+                        </option>
+                      </select>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label
+                        class="form-label"
+                        for="specialistEducationQualification"
+                        ><i class="bi bi-person-add"></i>Specialist Education
+                        Qualification:</label
+                      >
+                      <select
+                        class="form-select"
+                        id="specialistEducationQualification"
+                        name="specialistEducationQualification"
+                      >
+                        <option selected></option>
+                        <option value="0">No</option>
+                        <option value="10">
+                          STEM qualifications, Australian Masters or Doctorate,
+                          at least 2 years .
+                        </option>
+                      </select>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label
+                        class="form-label"
+                        for="credentialledCommunityLanguage"
+                        ><i class="bi-book"></i>Credentialed community
+                        language:</label
+                      >
+                      <select
+                        class="form-select"
+                        id="credentialledCommunityLanguage"
+                        name="credentialledCommunityLanguage"
+                      >
+                        <option selected></option>
+                        <option value="0">No</option>
+                        <option value="5">
+                          Hold a recognised qualification in a credentialed
+                          community language
+                        </option>
+                      </select>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label
+                        class="form-label"
+                        for="professionalYearInAustralia"
+                        ><i class="bi-book"></i>Professional Year in
+                        Australia:</label
+                      >
+                      <select
+                        class="form-select"
+                        id="professionalYearInAustralia"
+                        name="professionalYearInAustralia"
+                      >
+                        <option selected></option>
+                        <option value="0">No</option>
+                        <option value="5">
+                          Completion of a Professional Year in Australia
+                        </option>
+                      </select>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label class="form-label" for="studyInRegionalAustralia"
+                        ><i class="bi-book"></i>Study in regional
+                        Australia:</label
+                      >
+                      <select
+                        class="form-select"
+                        id="studyInRegionalAustralia"
+                        name="studyInRegionalAustralia"
+                      >
+                        <option selected></option>
+                        <option value="0">No</option>
+                        <option value="5">
+                          You must have at least 1 degree, diploma or trade
+                          qualification from an Australian educational
+                          institution
+                        </option>
+                      </select>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label class="form-label" for="partnerSkillQualification"
+                        ><i class="bi bi-people-fill"></i>Partner Skill
+                        Qualification:</label
+                      >
+                      <select
+                        class="form-select"
+                        id="partnerSkillQualification"
+                        name="partnerSkillQualification"
+                      >
+                        <option selected></option>
+                        <option value="0">No Spouse</option>
+                        <option value="10">
+                          Under 45 age, Competent English, Has suitable skill
+                        </option>
+                        <option value="10">
+                          Without Spouse OR Spouse is Australian Permanent
+                          Resident
+                        </option>
+                        <option value="5">Spouse with Competent English</option>
+                      </select>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label class="form-label" for="sponsorshipPoints"
+                        ><i class="bi bi-currency-dollar"></i>Sponsorship Points
+                        489 (Closing) and 491 Regional Visa:</label
+                      >
+                      <select
+                        class="form-select"
+                        id="sponsorshipPoints"
+                        name="sponsorshipPoints"
+                      >
+                        <option selected></option>
+                        <option value="15">
+                          Sponsored by a State Authority
+                        </option>
+                        <option value="15">
+                          Sponsored by an eligible Australia PR/ Citizen/ Family
+                          Member
+                        </option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label" for="totalPoints"
+                        >Total points Calculated:</label
+                      ><input
+                        id="totalPoints"
+                        type="button"
+                        name="totalPoints"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pr-points-calculator-content">
+        <div class="container">
+          <div class="section-heading">
+            <h2>PR Points Calculator for Engineering Australia</h2>
+          </div>
+          <p>
+            To help you know about how to calculate points for PR in Australia,
+            we created a PR Points Calculator. It can be used to check the
+            points and eligibility for Australian Permanent Resident Card.
+            Consider all of the necessary criteria in the above PR Australia
+            points calculator to determine eligibility. Contact us at
+            <a target="_blank" href="/">CDR Writer Australia</a> if you have any
+            doubts and confusion.
+          </p>
+          <p>
+            The Australian Immigration Points System 2022/2023 is based on
+            certain point criteria, such as skills, qualifications and work
+            experience, etc. The point for PR in Australia, which includes both
+            skilled independent and skilled nominated visas, is a crucial factor
+            that determines an individual's likely score in the PR points test.
+            For Engineers, the average score required is a minimum of 65 points.
+            Besides this, you also need to get your qualification and skills
+            assessed by Engineers Australia to get a permit for
+            <a target="_blank" href="skilled-migration-to-australia-with-pr"
+              >Skilled Migration to Australia with PR Visa</a
+            >.
+          </p>
+        </div>
+      </section>
+      <section class="call-to-action">
+        <div class="container">
+          <h2>Make Sure your Report gets Accepted by the EA</h2>
+          <p>
+            Instead of wasting your time and money with incompetent agencies,
+            contact us for your guaranteed success. Our writers will make sure
+            the results are refined, proofread, and plagiarism free. We are
+            giving Free Consultation for our clients.
+          </p>
+          <button
+            class="btn-all"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Get Free Consultation
+          </button>
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="modal-header">
+                      <p class="modal-title text-black" id="exampleModalLabel">
+                        Fill Your Details
+                      </p>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <form action="#" id="submitCTA">
+                      <span>Get Free Consultation</span>
+                      <input
+                        type="text"
+                        name="Name"
+                        id="nameCTA"
+                        class="form-control"
+                        placeholder="Your Name"
+                      />
+                      <input
+                        type="email"
+                        name="Email"
+                        id="emailCTA"
+                        class="form-control"
+                        placeholder="Your Email"
+                      />
+                      <input
+                        type="tel"
+                        name="Phone Number"
+                        id="numberCTA"
+                        class="form-control"
+                        placeholder="Your Phone Number"
+                      />
+                      <textarea
+                        name="Message"
+                        id="messageCTA"
+                        class="form-control"
+                        placeholder="Message"
+                      ></textarea>
+                      <button class="btn-all">Submit</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="frequently-asked-questions">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Frequently Asked Question</h2>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  How many points do I need for PR?
+                </button>
+              </h3>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    A minimum of 65 points is required to apply for PR through
+                    the Skill Select program in Australia. However, it is
+                    important to note that simply scoring the minimum number of
+                    points does not guarantee that you will receive PR.
+                  </p>
+                  <p>
+                    The number of points you are awarded depends on various
+                    factors, such as your age, work experience, English language
+                    proficiency, and qualifications. The exact number of points
+                    required for PR can also change over time as the Australian
+                    government adjusts its immigration policies.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  How do I calculate my PR points for Australia?
+                </button>
+              </h3>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    PR points in Australia are used to determine an individual's
+                    eligibility for permanent residency. Points are calculated
+                    based on factors such as age, language proficiency, work
+                    experience, education, and other skills. Different visa
+                    programs have different point requirements, so it is
+                    important to be aware of the specific program being applied
+                    for. The general guideline for calculating PR points
+                    includes age (25-32 years old, max 25 points), English
+                    proficiency (20 points), work experience (based on type,
+                    duration, and skill level), education (max 20 points), a
+                    skilled spouse/partner, and other factors such as a job
+                    offer or points.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  How can I get Australian PR points?
+                </button>
+              </h3>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    To get Australian Permanent Residency (PR), you need to meet
+                    the eligibility criteria and score enough points on the
+                    Points Test. The Points Test is a part of the process to
+                    apply for skilled migration visas, such as the Subclass 189
+                    visa, the Subclass 190 visa, or the Subclass 491 visa.
+                  </p>
+                  <p>
+                    Here are some factors that can help you score points on the
+                    points test:
+                  </p>
+                  <ul>
+                    <li>
+                      Age: You can get the most points if you are under the age
+                      of 45.
+                    </li>
+                    <li>
+                      English language proficiency: You can earn points for your
+                      proficiency in English based on the results of a
+                      recognized English language test.
+                    </li>
+                    <li>
+                      Work experience: Points can be awarded for work experience
+                      in your nominated or closely related occupation.
+                    </li>
+                    <li>
+                      Educational qualifications: You can get points for your
+                      educational qualifications, including a PhD or master's
+                      degree.
+                    </li>
+                    <li>
+                      Skilled spouse or de facto partner: If your spouse or
+                      partner is skilled and has a suitable occupation, you may
+                      be able to get additional points.
+                    </li>
+                    <li>
+                      State sponsorship: If you are sponsored by an Australian
+                      state or territory, you may be eligible for additional
+                      points.
+                    </li>
+                    <li>
+                      Nomination by an Australian employer: If you have a
+                      genuine job offer from an Australian employer, you may be
+                      eligible for additional points.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <button
+        class="go-to-top-btn"
+        onclick="goToTop()"
+        id="goToTop"
+        aria-label="Go to Top Button"
+      >
+        <i class="bi-arrow-up"></i>
+      </button>
+      <section id="whatsapp-chat">
+        <div class="container">
+          <button
+            type="button"
+            onclick="show()"
+            class="fixed-whatsapp-icon"
+            aria-label="Whatsapp Popup button"
+          >
+            <i class="bi bi-whatsapp"></i>
+          </button>
+          <div class="row">
+            <div
+              class="col-11 col-md-5 col-lg-3 whatsapp-card"
+              id="showWhatsapp"
+              style="visibility: hidden"
+            >
+              <div class="card">
+                <div class="card-header">
+                  <div class="chat-icon">
+                    <i class="bi bi-wechat"></i>
+                  </div>
+                  <div class="chat-person">
+                    <p>Aadya Sharma</p>
+                    <p>Text Us in Whatsapp</p>
+                  </div>
+                  <button
+                    type="button"
+                    onclick="closeWhatsapp()"
+                    class="btn-close btn-close-white"
+                  ></button>
+                </div>
+                <div class="card-body">
+                  <p class="text-box">
+                    <span>Aadya Sharma</span><br />
+                    Hi, there!<br />
+                    How can I help you?
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a
+                    href="https://wa.link/o9z7o4"
+                    target="_blank"
+                    class="whatsapp-start-chat-btn"
+                  >
+                    <i class="bi-whatsapp me-3"></i>Start Chat
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-form">
+        <div class="container">
+          <div class="section-heading">
+            <h3>Contact Us</h3>
+          </div>
+          <div class="row g-4 g-md-5 g-lg-0">
+            <div class="col-12 col-lg-8 contact-form__form">
+              <div class="card">
+                <div class="card-body">
+                  <form id="submitFooter" action="#">
+                    <div class="row g-4 g-md-5">
+                      <div class="col-12 col-md-4">
+                        <label for="nameFooter">Full Name*</label>
+                        <input
+                          type="text"
+                          name="Name"
+                          id="nameFooter"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <label for="emailFooter">Email*</label>
+                        <input
+                          type="email"
+                          name="Email"
+                          id="emailFooter"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <label for="phoneFooter">Phone Number*</label>
+                        <input
+                          type="tel"
+                          name="Number"
+                          id="phoneFooter"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                      <div class="col-12 col-md-12">
+                        <label for="messageFooter">Message</label>
+                        <textarea
+                          name="Message"
+                          id="messageFooter"
+                          class="form-control"
+                        ></textarea>
+                      </div>
+                      <button class="btn-all">Send Message</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 contact-form__info">
+              <div class="card">
+                <div class="card-body">
+                  <ul>
+                    <li>
+                      <i class="bi-telephone-outbound"></i>
+                      <a href="tel:+61 480097490" target="_blank"
+                        >+61 480097490</a
+                      >
+                    </li>
+                    <li>
+                      <i class="bi-envelope"></i>
+                      <a href="mailto:aadhyasharma469@gmail.com"
+                        >aadhyasharma469@gmail.com</a
+                      >
+                    </li>
+                    <li>
+                      <i class="bi-geo-alt"></i>Parramatta NSW 2150 Australia
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer-links">
+        <div class="container-fluid">
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-2 footer-links__about-us">
+              <div class="card">
+                <div class="card-body">
+                  <a href="/" aria-label="CDR Writer Australia Logo"
+                    ><img
+                      src="./img/cdr-writer-australia-logo.webp"
+                      alt="CDR Writer Australia Logo"
+                  /></a>
+                </div>
+              </div>
+              <p>
+                CDRWriterAustralia.com is neither affiliated with nor endorsed
+                by Engineers Australia.
+                <a href="about-us">Learn More About Us.</a>
+              </p>
+              <p>Follow Us On:</p>
+              <ol>
+                <li>
+                  <a
+                    href="https://www.facebook.com/cdrwriteraustralia"
+                    target="_blank"
+                    aria-label="Facebook Link of CDR Writer Australia"
+                    ><i class="bi-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://wa.link/o9z7o4"
+                    target="_blank"
+                    aria-label="Whatsapp Link of CDR Writer Australia"
+                    ><i class="bi bi-whatsapp"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/cdrwriteraustralia"
+                    target="_blank"
+                    aria-label="Linkedin Link of CDR Writer Australia"
+                    ><i class="bi bi-linkedin"></i>
+                  </a>
+                </li>
+              </ol>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-2 footer-links__useful-links d-none d-md-block"
+            >
+              <h4>Useful Link</h4>
+              <ul>
+                <li><a href="anzsco-codes">ANZSCO Codes</a></li>
+                <li><a href="cdr-report-samples">CDR Samples</a></li>
+
+                <li><a href="pricing">Pricing</a></li>
+                <li>
+                  <a href="australia-pr-points-calculator"
+                    >PR Point Calculator</a
+                  >
+                </li>
+                <li><a href="contact">Contact</a></li>
+                <li>
+                  <a href="https://wa.link/o9z7o4" target="_blank"
+                    >Ask an Expert</a
+                  >
+                </li>
+                <li>
+                  <a href="terms-of-use">Terms of Use</a>
+                </li>
+                <li>
+                  <a href="privacy-policy">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="refund-and-cancellation-policy"
+                    >Refund and Cancellation Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 footer-links__useful-links d-md-none">
+              <div class="accordion" id="accordionExample1">
+                <div class="accordion-item">
+                  <h4 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne1"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Useful Link
+                    </button>
+                  </h4>
+                  <div
+                    id="collapseOne1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample1"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li><a href="anzsco-codes">ANZSCO Codes</a></li>
+                        <li><a href="cdr-report-samples">CDR Samples</a></li>
+
+                        <li><a href="pricing">Pricing</a></li>
+                        <li>
+                          <a href="australia-pr-points-calculator"
+                            >PR Point Calculator</a
+                          >
+                        </li>
+                        <li><a href="contact">Contact</a></li>
+                        <li>
+                          <a href="https://wa.link/o9z7o4" target="_blank"
+                            >Ask an Expert</a
+                          >
+                        </li>
+                        <li>
+                          <a href="terms-of-use">Terms of Use</a>
+                        </li>
+                        <li>
+                          <a href="privacy-policy">Privacy Policy</a>
+                        </li>
+                        <li>
+                          <a href="refund-and-cancellation-policy"
+                            >Refund and Cancellation Policy</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-3 footer-links__services d-none d-md-block"
+            >
+              <h4>Services</h4>
+              <ul>
+                <li><a href="services">All CDR Services</a></li>
+                <li><a href="cdr-report-writing">CDR Report Writing</a></li>
+
+                <li>
+                  <a href="career-episode-writing">Career Episode Writing</a>
+                </li>
+                <li>
+                  <a href="summary-statement-writing"
+                    >Summary Statement Writing</a
+                  >
+                </li>
+                <li>
+                  <a href="cdr-review-service">CDR Review Service</a>
+                </li>
+                <li><a href="stage-2-cdr-writing">Stage 2 CDR Writing</a></li>
+                <li>
+                  <a href="stage-2-competency-claims-writing"
+                    >Stage 2 Competency Claims Writing</a
+                  >
+                </li>
+                <li>
+                  <a href="cdr-stage-2-review">CDR Stage 2 Review Service</a>
+                </li>
+                <li><a href="rpl-report-writing">RPL Report Writing</a></li>
+                <li><a href="rpl-review-service">RPL Review Service</a></li>
+                <li>
+                  <a href="ka02-report-writing">KA02 Report Writing</a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-3 footer-links__services d-md-none"
+            >
+              <div class="accordion" id="accordionExample2">
+                <div class="accordion-item">
+                  <h4 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo2"
+                      aria-expanded="true"
+                      aria-controls="collapseTwo"
+                    >
+                      Services
+                    </button>
+                  </h4>
+                  <div
+                    id="collapseTwo2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample2"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li><a href="services">All CDR Services</a></li>
+                        <li>
+                          <a href="cdr-report-writing">CDR Report Writing</a>
+                        </li>
+
+                        <li>
+                          <a href="career-episode-writing"
+                            >Career Episode Writing</a
+                          >
+                        </li>
+                        <li>
+                          <a href="summary-statement-writing"
+                            >Summary Statement Writing</a
+                          >
+                        </li>
+                        <li>
+                          <a href="cdr-review-service">CDR Review Service</a>
+                        </li>
+                        <li>
+                          <a href="stage-2-cdr-writing">Stage 2 CDR Writing</a>
+                        </li>
+                        <li>
+                          <a href="stage-2-competency-claims-writing"
+                            >Stage 2 Competency Claims Writing</a
+                          >
+                        </li>
+                        <li>
+                          <a href="cdr-stage-2-review"
+                            >CDR Stage 2 Review Service</a
+                          >
+                        </li>
+                        <li>
+                          <a href="rpl-report-writing">RPL Report Writing</a>
+                        </li>
+                        <li>
+                          <a href="rpl-review-service">RPL Review Service</a>
+                        </li>
+                        <li>
+                          <a href="ka02-report-writing">KA02 Report Writing</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 footer-links__blogs d-none d-md-block"
+            >
+              <h4>Blogs</h4>
+              <ul>
+                <li>
+                  <a href="mltssl-medium-long-term-strategic-skills-list-2022"
+                    >Medium and Long-Term Strategic Skills List (MLTSSL) -
+                    2023</a
+                  >
+                </li>
+                <li>
+                  <a href="national-engineering-register"
+                    >What is National Engineering Register (NER)</a
+                  >
+                </li>
+                <li>
+                  <a href="cpd-statement-sample"
+                    >CPD Statement Sample for CDR Writers
+                  </a>
+                </li>
+                <li>
+                  <a href="cdr-report-for-electrical-engineers"
+                    >CDR Report For Electrical Engineers - ANZSCO Code 233311</a
+                  >
+                </li>
+                <li>
+                  <a href="top-10-engineering-jobs-in-australia"
+                    >Top 10 Engineering Jobs in Australia for 2022 / 2023</a
+                  >
+                </li>
+                <li>
+                  <a href="acs-skills-assessment">ACS Skills Assessment</a>
+                </li>
+                <li>
+                  <a href="engineers-australia-skills-assessment"
+                    >Engineers Australia Skills Assessment</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-3 footer-links__services d-md-none"
+            >
+              <div class="accordion" id="accordionExample3">
+                <div class="accordion-item">
+                  <h4 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree3"
+                      aria-expanded="true"
+                      aria-controls="collapseThree"
+                    >
+                      Blogs
+                    </button>
+                  </h4>
+                  <div
+                    id="collapseThree3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample3"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="mltssl-medium-long-term-strategic-skills-list-2022"
+                            >Medium and Long-Term Strategic Skills List (MLTSSL)
+                            - 2023</a
+                          >
+                        </li>
+                        <li>
+                          <a href="national-engineering-register"
+                            >What is National Engineering Register (NER)</a
+                          >
+                        </li>
+                        <li>
+                          <a href="cpd-statement-sample"
+                            >CPD Statement Sample for CDR Writers
+                          </a>
+                        </li>
+                        <li>
+                          <a href="cdr-report-for-electrical-engineers"
+                            >CDR Report For Electrical Engineers - ANZSCO Code
+                            233311</a
+                          >
+                        </li>
+                        <li>
+                          <a href="top-10-engineering-jobs-in-australia"
+                            >Top 10 Engineering Jobs in Australia for 2022 /
+                            2023</a
+                          >
+                        </li>
+                        <li>
+                          <a href="acs-skills-assessment"
+                            >ACS Skills Assessment</a
+                          >
+                        </li>
+                        <li>
+                          <a href="engineers-australia-skills-assessment"
+                            >Engineers Australia Skills Assessment</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="copyrights">
+            Copyrights 2024 ©All Rights Reserved - CDR Writer Australia
+          </p>
+        </div>
+      </section>
+    </footer>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Australia PR points Calculator | Australian Immigration",
+        "description": "Our Australia PR points calculator will help you calculate points for various subclass visas to determine your chances of obtaining a Skilled visa.",
+        "logo": "https://www.cdrwriteraustralia.com/img/cdr-writer-australia-logo.webp",
+        "url": "https://www.cdrwriteraustralia.com/australia-pr-points-calculator",
+        "telephone": "+61 480097490",
+        "priceRange": "AU $79-$2500",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Parramatta",
+          "addressRegion": "NSW",
+          "postalCode": "2150",
+          "addressCountry": "AU"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        },
+        "sameAs": [
+          "https://www.cdrwriteraustralia.com",
+          "https://www.facebook.com/cdrwriteraustralia",
+          "https://www.linkedin.com/company/cdrwriteraustralia"
+        ]
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <script>
+      var yourAge = document.getElementById("yourAge"),
+        yourAgeValue = yourAge.value;
+
+      var englishLanguageSkill = document.getElementById(
+          "englishLanguageSkill"
+        ),
+        englishLanguageSkillValue = englishLanguageSkill.value;
+
+      var skilledEmployentOutsideAustralia = document.getElementById(
+        "skilledEmployentOutsideAustralia"
+      );
+      skilledEmployentOutsideAustraliaValue =
+        skilledEmployentOutsideAustralia.value;
+
+      var skilledEmployentInsideAustralia = document.getElementById(
+        "skilledEmployentInsideAustralia"
+      );
+      skilledEmployentInsideAustraliaValue =
+        skilledEmployentInsideAustralia.value;
+
+      var qualification = document.getElementById("qualification");
+      qualificationValue = qualification.value;
+
+      var australianStudyRequirement = document.getElementById(
+        "australianStudyRequirement"
+      );
+      australianStudyRequirementValue = australianStudyRequirement.value;
+
+      var specialistEducationQualification = document.getElementById(
+        "specialistEducationQualification"
+      );
+      specialistEducationQualificationValue =
+        specialistEducationQualification.value;
+
+      var credentialledCommunityLanguage = document.getElementById(
+        "credentialledCommunityLanguage"
+      );
+      credentialledCommunityLanguageValue =
+        credentialledCommunityLanguage.value;
+
+      var professionalYearInAustralia = document.getElementById(
+        "professionalYearInAustralia"
+      );
+      professionalYearInAustraliaValue = professionalYearInAustralia.value;
+
+      var studyInRegionalAustralia = document.getElementById(
+        "studyInRegionalAustralia"
+      );
+      studyInRegionalAustraliaValue = studyInRegionalAustralia.value;
+
+      var partnerSkillQualification = document.getElementById(
+        "partnerSkillQualification"
+      );
+      partnerSkillQualificationValue = partnerSkillQualification.value;
+
+      var sponsorshipPoints = document.getElementById("sponsorshipPoints");
+      sponsorshipPointsValue = sponsorshipPoints.value;
+
+      yourAge.onchange = () => calculate();
+      englishLanguageSkill.onchange = () => calculate();
+      skilledEmployentOutsideAustralia.onchange = () => calculate();
+      skilledEmployentInsideAustralia.onchange = () => calculate();
+      qualification.onchange = () => calculate();
+      australianStudyRequirement.onchange = () => calculate();
+      specialistEducationQualification.onchange = () => calculate();
+      credentialledCommunityLanguage.onchange = () => calculate();
+      professionalYearInAustralia.onchange = () => calculate();
+      studyInRegionalAustralia.onchange = () => calculate();
+      partnerSkillQualification.onchange = () => calculate();
+      sponsorshipPoints.onchange = () => calculate();
+
+      function calculate() {
+        yourAgeValue = yourAge.value;
+        englishLanguageSkillValue = englishLanguageSkill.value;
+        skilledEmployentOutsideAustraliaValue =
+          skilledEmployentOutsideAustralia.value;
+        skilledEmployentInsideAustraliaValue =
+          skilledEmployentInsideAustralia.value;
+        qualificationValue = qualification.value;
+        australianStudyRequirementValue = australianStudyRequirement.value;
+        specialistEducationQualificationValue =
+          specialistEducationQualification.value;
+        credentialledCommunityLanguageValue =
+          credentialledCommunityLanguage.value;
+        professionalYearInAustraliaValue = professionalYearInAustralia.value;
+        studyInRegionalAustraliaValue = studyInRegionalAustralia.value;
+        partnerSkillQualificationValue = partnerSkillQualification.value;
+        sponsorshipPointsValue = sponsorshipPoints.value;
+
+        var sum = 0;
+        var a = +yourAgeValue;
+        var b = +englishLanguageSkillValue;
+        var c = +skilledEmployentOutsideAustraliaValue;
+        var d = +skilledEmployentInsideAustraliaValue;
+        var e = +qualificationValue;
+        var f = +australianStudyRequirementValue;
+        var g = +specialistEducationQualificationValue;
+        var h = +credentialledCommunityLanguageValue;
+        var i = +professionalYearInAustraliaValue;
+        var j = +studyInRegionalAustraliaValue;
+        var k = +partnerSkillQualificationValue;
+        var l = +sponsorshipPointsValue;
+
+        sum = a + b + c + d + e + f + g + h + i + j + k + l;
+        document.getElementById("totalPoints").value = sum;
+      }
+    </script>
+  </body>
+</html>

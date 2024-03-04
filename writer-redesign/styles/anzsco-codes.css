@@ -1,0 +1,68 @@
+.anzsco-codes .btn-anzsco {
+  border: none;
+  background-color: #fff;
+  color: var(--color-primary);
+}
+.anzsco-codes-engineers span {
+  color: var(--color-primary);
+}
+.anzsco-codes-engineers h2 {
+  padding: 3rem 0 0.5rem;
+}
+.anzsco-codes-engineers h3 {
+  padding: 2.5rem 0 0.5rem;
+}
+.anzsco-codes-engineers h4 {
+  padding: 2rem 0 0.5rem;
+}
+.anzsco-codes-engineers table {
+  margin: .5rem 0 2rem;
+}
+.anzsco-codes-engineers table th {
+  font-weight: bold;
+}
+.anzsco-codes-engineers .visa-options td {
+  padding: 2rem 1rem;
+}
+.anzsco-codes-engineers .note-text {
+  font-style: italic;
+}
+.anzsco-codes-engineers .bi-x-lg {
+  color: red;
+}
+.anzsco-codes-engineers .accordion .accordion-button {
+  font-size: 2.3rem;
+
+}
+.anzsco-codes-engineers .accordion{
+ border-width:none;
+}
+.anzsco-codes-engineers .accordion .accordion-item h2 {
+  padding: 0.5rem;
+}
+
+.anzsco-codes-engineers .accordion .accordion-body ul {
+  padding: 0 0 0 2.5rem;
+  
+}
+.anzsco-codes-engineers .accordion .accordion-body ul li{
+  padding-left: .5rem;
+}
+
+.anzsco-codes-engineers .accordion .accordion-button:not(.collapsed) {
+  color: #000;
+  background: #ffffff;
+  box-shadow: none;
+ 
+}
+.anzsco-codes-engineers .accordion .accordion-button:focus{
+  border-color: none;
+    outline: 0;
+    box-shadow: none;
+}
+.anzsco-codes-engineers .accordion .accordion-button::after{
+background-image: var(--bs-accordion-btn-icon);
+
+}
+
+

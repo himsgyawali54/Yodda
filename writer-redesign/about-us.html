@@ -1,0 +1,1782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us</title>
+    <meta
+      content="CDR Writer Australia helps engineers and ICT professionals with consultation & domain-specific report writing services to achieve positive skills assessment."
+      name="description"
+    />
+    <link rel="canonical" href="https://www.cdrwriteraustralia.com/about-us" />
+    <link href="./img/cdr-writer-australia-logo-favicon.webp" rel="icon" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <style>
+      .team-members .card {
+        border: none;
+        border-bottom: 2px solid var(--color-primary);
+        box-shadow: var(--card-shadow);
+      }
+      .team-members .card:hover {
+        border-bottom: 3.5px solid var(--color-primary);
+      }
+
+      .team-members .card .flip-icon {
+        display: inline-block;
+        perspective: 1000px;
+
+        background-color: var(--color-primary);
+        width: 40px;
+        height: auto;
+        border-radius: 50%;
+        text-align: center;
+      }
+
+      .team-members .card .flip-icon i {
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+        animation: rotateIcon 2s ease infinite;
+      }
+
+      .team-members .card:hover .flip-icon {
+        transform: scale(1.19);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .team-members .card .card-body .card-heading {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 1rem 0 1.5rem 3rem;
+      }
+      .team-members .card .card-body .card-heading .bi {
+        font-size: var(--h2-fontsize);
+
+        color: #fff;
+      }
+      .team-members .card .card-body h3 {
+        text-align: center;
+      }
+      .team-members .card ul li {
+        list-style: none;
+      }
+
+      .why-choose-us .row {
+        padding-top: 5rem;
+      }
+
+      .why-choose-us .row .col {
+        margin-bottom: 5.5rem;
+      }
+
+      .why-choose-us .card {
+        position: relative;
+        border: 0.15rem solid var(--color-primary);
+        display: inline-block;
+        height: 100%;
+      }
+
+      .why-choose-us .card::before {
+        position: absolute;
+        content: "";
+        right: -1px;
+        bottom: -1px;
+        border-bottom: 4rem solid var(--color-primary);
+        border-left: 4rem solid transparent;
+      }
+
+      .why-choose-us .card::after {
+        position: absolute;
+        content: "";
+        right: -2px;
+        bottom: -2px;
+        border-bottom: 4rem solid white;
+        border-left: 4rem solid transparent;
+      }
+
+      .why-choose-us .card .card-body {
+        padding: 5rem 2rem 1rem 3rem;
+      }
+
+      .why-choose-us .card .card-body .bordered-icon i {
+        position: relative;
+      }
+
+      .why-choose-us .card .card-body .bordered-icon {
+        position: absolute;
+        top: -3rem;
+        padding: 1rem 2rem;
+        font-size: var(--h2-fontsize);
+        background: var(--color-primary);
+        color: #fff;
+        width: fit-content;
+      }
+
+      .why-choose-us .card .card-body .bordered-icon::before {
+        position: absolute;
+        content: "";
+        right: -2px;
+        bottom: -2px;
+        border-bottom: 2rem solid var(--color-primary);
+        border-left: 2rem solid transparent;
+      }
+
+      .why-choose-us .card .card-body .bordered-icon::after {
+        position: absolute;
+        content: "";
+        right: -2px;
+        bottom: -2px;
+        border-bottom: 3rem solid white;
+        border-left: 3rem solid transparent;
+      }
+      .call-to-action p {
+        font-size: var(--h2-fontsize);
+      }
+    </style>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </head>
+
+  <body>
+    <header class="fixed-top" id="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-top">
+          <a class="navbar-brand order-0" href="/">
+            <img
+              class="logo"
+              src="./img/cdr-writer-australia-logo.webp"
+              alt="CDR Writer Australia Logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler order-2 order-lg-1"
+            type="button"
+            tabindex="0"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse order-2 order-lg-1"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto gap-lg-5">
+              <li class="nav-item">
+                <a class="nav-link" href="about-us">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <span
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  tabindex="0"
+                  data-bs-auto-close="outside"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </span>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="services"
+                      >All CDR Services</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="cdr-report-writing"
+                      >CDR Report Writing</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="career-episode-writing"
+                      >Career Episode Writing</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="summary-statement-writing"
+                      >Summary Statement Writing</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="cdr-review-service">
+                      CDR Review Service</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="stage-2-cdr-writing">
+                      Stage 2 CDR Writing</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="stage-2-competency-claims-writing"
+                    >
+                      Stage 2 Competency Claims Writing</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/cdr-stage-2-review">
+                      CDR Stage 2 Review Service</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="rpl-report-writing"
+                      >RPL Report Writing</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="rpl-review-service"
+                      >RPL Review Service</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="ka02-report-writing"
+                      >KA02 Report Writing</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <span
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  tabindex="0"
+                  data-bs-auto-close="outside"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  ANZSCO
+                </span>
+                <ul class="dropdown-menu">
+                  <li class="sub-dropdown">
+                    <span
+                      class="dropdown-item dropdown-toggle d-lg-none"
+                      data-bs-toggle="dropdown"
+                      role="button"
+                      tabindex="0"
+                    >
+                      ANZSCO Codes CDR
+                    </span>
+
+                    <a
+                      class="dropdown-item dropdown-toggle d-none d-lg-block"
+                      href="anzsco-codes"
+                    >
+                      ANZSCO Codes CDR
+                    </a>
+                    <div class="dropdown-menu row row-cols-1 row-cols-lg-3">
+                      <p class="d-lg-none">
+                        <a href="anzsco-codes"
+                          >Full List of ANZSCO Codes CDR
+                        </a>
+                      </p>
+                      <div class="col">
+                        <p>UNIT GROUP 1332</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/engineering-manager-133211">
+                              Engineering Manager ANZSCO 133211</a
+                            >
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2331</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/chemical-engineer-233111">
+                              Chemical Engineer ANZSCO 233111</a
+                            >
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/materials-engineer-233112">
+                              Materials Engineer ANZSCO 233112</a
+                            >
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2332</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/civil-engineer-233211">
+                              Civil Engineer ANZSCO 233211</a
+                            >
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/geotechnical-engineer-233212"
+                              >Geotechnical Engineer ANZSCO 233212
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/structural-engineer-233214"
+                              >Structural Engineer ANZSCO 233214
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/transport-engineer-233215"
+                              >Transport Engineer ANZSCO 233215
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2333</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/electrical-engineer-233311"
+                              >Electrical Engineer ANZSCO 233311
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2334</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/electronics-engineer-233411"
+                              >Electronics Engineer ANZSCO 233411
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <p>UNIT GROUP 2335</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/industrial-engineer-233511"
+                              >Industrial Engineer ANZSCO 233511
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/mechanical-engineer-233512"
+                              >Mechanical Engineer ANZSCO 233512
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/production-engineer-233513">
+                              Production Engineer ANZSCO 233513
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2336</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/mining-engineer-233611"
+                              >Mining Engineer ANZSCO 233611
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/petroleum-engineer-233612"
+                              >Petroleum Engineer ANZSCO 233612
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2339</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/aeronautical-engineer-233911">
+                              Aeronautical Engineer ANZSCO 233911
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/agricultural-engineer-233912"
+                              >Agricultural Engineer ANZSCO 233912
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/biomedical-engineer-233913"
+                              >Biomedical Engineer ANZSCO 233913
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/engineering-technologist-233914"
+                              >Engineering Technologist ANZSCO 233914
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/environmental-engineer-233915"
+                              >Environmental Engineer ANZSCO 233915
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/engineering-professionals-nec-233999"
+                              >Engineering Professional ANZSCO 233999
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <p>UNIT GROUP 2633</p>
+                        <ul>
+                          <li>
+                            <a
+                              href="anzsco-codes/telecommunication-engineer-263311"
+                              >Telecommunication Engineer ANZSCO 263311
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/telecommunication-network-engineer-263312"
+                              >Telecommunication Network Engineer ANZSCO 263312
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 3122</p>
+                        <ul>
+                          <li>
+                            <a
+                              href="anzsco-codes/civil-engineering-draftsperson-312211"
+                              >Civil Engineering Draftsperson ANZSCO 312211
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/civil-engineering-technician-312212"
+                              >Civil Engineering Technician ANZSCO 312212
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 3123</p>
+                        <ul>
+                          <li>
+                            <a
+                              href="anzsco-codes/electrical-engineering-draftsperson-312311"
+                              >Electrical Engineering Draftsperson ANZSCO 312311
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/electrical-engineering-technician-312312"
+                              >Electrical Engineering Technician ANZSCO 312312
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 3132</p>
+                        <ul>
+                          <li>
+                            <a
+                              href="anzsco-codes/telecommunications-field-engineer-313212"
+                              >Telecommunications Field Engineer ANZSCO 313212
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="sub-dropdown">
+                    <span
+                      class="dropdown-item dropdown-toggle d-lg-none"
+                      data-bs-toggle="dropdown"
+                      role="button"
+                      tabindex="0"
+                    >
+                      ACS ANZSCO Code
+                    </span>
+                    <a
+                      class="dropdown-item dropdown-toggle d-none d-lg-block"
+                      href="acs-anzsco-code"
+                    >
+                      ACS ANZSCO Code
+                    </a>
+                    <div class="dropdown-menu row row-cols-1 row-cols-lg-3">
+                      <p class="d-lg-none">
+                        <a href="acs-anzsco-code"
+                          >Full List of ACS ANZSCO Code
+                        </a>
+                      </p>
+                      <div class="col">
+                        <p>UNIT GROUP 1351</p>
+                        <ul>
+                          <li>
+                            <a
+                              href="anzsco-codes/chief-information-officer-135111"
+                            >
+                              Chief Information Officer ANZSCO 135111</a
+                            >
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/ict-project-manager-135112">
+                              ICT Project Manager ANZSCO 135112</a
+                            >
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/ict-managers-nec-135199">
+                              ICT Managers nec ANZSCO 135199</a
+                            >
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2232</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/ict-trainer-223211">
+                              ICT Trainer ANZSCO 223211</a
+                            >
+                          </li>
+                        </ul>
+
+                        <p>UNIT GROUP 2611</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/ict-business-analyst-261111"
+                              >ICT Business Analyst ANZSCO 261111
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/system-analyst-261112"
+                              >System Analyst ANZSCO 261112
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2612</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/multimedia-specialist-261211"
+                              >Multimedia Specialist ANZSCO 261211
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/web-developer-261212"
+                              >Web Developer ANZSCO 261212
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <p>UNIT GROUP 2613</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/analyst-programmer-261311"
+                              >Analyst Programmer ANZSCO 261311
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/developer-programmer-261312"
+                              >Developer Programmer ANZSCO 261312
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/software-engineer-261313">
+                              Software Engineer ANZSCO 261313
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/software-tester-261314">
+                              Software Tester ANZSCO 261314
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/software-and-applications-programmer-nec-261399"
+                            >
+                              Software and Applications Programmer<br />
+                              nec ANZSCO 261399
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2621</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/database-administrator-262111"
+                              >Database Administrator ANZSCO 262111
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/ict-security-specialist-262112"
+                              >ICT Security Specialist ANZSCO 262112
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/systems-administrator-262113"
+                              >Systems Administrator ANZSCO 262113
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <p>UNIT GROUP 2631</p>
+                        <ul>
+                          <li>
+                            <a
+                              href="anzsco-codes/computer-network-and-systems-engineer-263111"
+                              >Computer Network and Systems Engineer ANZSCO
+                              263111
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/network-administrator-263112"
+                              >Network Administrator ANZSCO 263112
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/network-analyst-263113"
+                              >Network Analyst ANZSCO 263113
+                            </a>
+                          </li>
+                        </ul>
+                        <p>UNIT GROUP 2632</p>
+                        <ul>
+                          <li>
+                            <a
+                              href="anzsco-codes/ict-quality-assurance-engineer-263211"
+                              >ICT Quality Assurance Engineer ANZSCO 263211
+                            </a>
+                          </li>
+                          <li>
+                            <a href="anzsco-codes/ict-support-engineer-263212"
+                              >ICT Support Engineer ANZSCO 263212
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/ict-systems-test-engineer-263213"
+                              >ICT Systems Test Engineer ANZSCO 263213
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="anzsco-codes/ict-support-and-test-engineers-nec-263299"
+                              >ICT Support and Test Engineers nec ANZSCO 263299
+                            </a>
+                          </li>
+                        </ul>
+
+                        <p>UNIT GROUP 3131</p>
+                        <ul>
+                          <li>
+                            <a href="anzsco-codes/web-administrator-313113"
+                              >Web Administrator ANZSCO 313113
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cdr-report-samples">CDR Samples</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <a
+            href="tel:+61 480097490"
+            class="btn-all order-1 order-lg-2"
+            aria-label="Phone Number of CDRWriterAustralia"
+            ><i class="bi-telephone-outbound-fill"></i>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="breadcrumbs">
+            <p>About <span>Us</span></p>
+            <ul>
+              <li><a href="/">Home</a> &raquo</li>
+              <li>About Us</li>
+            </ul>
+          </div>
+          <div class="row g-4 g-md-5">
+            <div class="col-12 col-md-12 col-lg-8">
+              <h1>Who Are <span>We?</span></h1>
+              <p>
+                <a target="_blank" href="/">CDR Writer Australia</a> is a group
+                of engineering and ICT professionals providing
+                <b>services</b> like
+                <a href="cdr-report-writing">CDR report writing</a>,
+                <a
+                  target="_blank"
+                  href="https://www.cdrwriteraustralia.com/rpl-report-writing"
+                  >RPL report writing</a
+                >
+                and
+                <a
+                  target="_blank"
+                  href="https://www.cdrwriteraustralia.com/ka02-report-writing"
+                  >KA02 report writing</a
+                >. We offer engineering / ICT domain-specific report writing to
+                help you achieve positive skills assessment. Also, we provide
+                <b>Australian visa consultation</b> to find better pathways to
+                Australian immigration and eventually enjoy a good stay here!
+              </p>
+              <ul>
+                <li><i class="bi bi-people"></i> 24 X 7 Live Help</li>
+                <li>
+                  <i class="bi bi-hand-thumbs-up"></i>Experienced counselling
+                </li>
+              </ul>
+              <a class="btn-all" href="https://wa.link/o9z7o4" target="_blank"
+                >Lets Chat</a
+              >
+            </div>
+            <div class="form-col col-12 col-md-6 col-lg-4">
+              <span class="triangle-1"></span>
+              <span class="triangle-2"></span>
+              <div class="card">
+                <div class="card-body">
+                  <form id="submitHero" action="#">
+                    <span>Get Free Consultation</span>
+                    <div class="form-input">
+                      <label for="NameHero" class="form-label">Name</label>
+                      <input
+                        type="text"
+                        name="Name"
+                        id="NameHero"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="form-input">
+                      <label for="EmailHero" class="form-label">Email</label>
+                      <input
+                        type="text"
+                        name="Email"
+                        id="EmailHero"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="form-input">
+                      <label for="NumberHero" class="form-label">Number</label>
+                      <input
+                        type="text"
+                        name="Phone"
+                        id="NumberHero"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="form-input">
+                      <label for="MessageHero" class="form-label"
+                        >Message</label
+                      >
+                      <textarea
+                        name="Message"
+                        class="form-control"
+                        id="MessageHero"
+                      ></textarea>
+                    </div>
+                    <button type="submit" class="btn-all form-submit-btn">
+                      Send Message
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="team-members">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="our-expert-writers">Our Expert Writers</h2>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 g-md-5">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-heading">
+                    <div class="flip-icon">
+                      <i class="bi bi-chat-dots"></i>
+                    </div>
+                    <h3 id="aadya-sharma">Aadya Sharma</h3>
+                  </div>
+
+                  <ul>
+                    <li>Qualification: Civil Engineer</li>
+                    <li>Engineering experience: 9 years</li>
+                    <li>CDR writing experience: 8 years</li>
+                    <li>Client review: Hands-down, the best CDR writer!</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-heading">
+                    <div class="flip-icon">
+                      <i class="bi bi-chat-text"></i>
+                    </div>
+                    <h3 id="nyra-mahat">Nyra Mahat</h3>
+                  </div>
+
+                  <ul>
+                    <li>Qualification: Mechanical Engineer</li>
+                    <li>Engineering experience: 9 years</li>
+                    <li>CDR writing experience: 8 years</li>
+                    <li>Client review: Highly recommend her CDR service.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-heading">
+                    <div class="flip-icon">
+                      <i class="bi bi-chat-dots"></i>
+                    </div>
+                    <h3 id="shaanvi-thapa">Shaanvi Thapa</h3>
+                  </div>
+
+                  <ul>
+                    <li>Qualification: Civil Engineer</li>
+                    <li>Engineering experience: 6 years</li>
+                    <li>CDR writing experience: 5 years</li>
+                    <li>Client review: Precise and result-driven.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-heading">
+                    <div class="flip-icon">
+                      <i class="bi bi-chat-text"></i>
+                    </div>
+                    <h3 id="kaira-joshi">Kaira Joshi</h3>
+                  </div>
+
+                  <ul>
+                    <li>Qualification: Electronic Engineer</li>
+                    <li>Engineering experience: 7 years</li>
+                    <li>CDR writing experience: 6 years</li>
+                    <li>Client review: Her CDR writing got me success!</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-heading">
+                    <div class="flip-icon">
+                      <i class="bi bi-chat-dots"></i>
+                    </div>
+                    <h3 id="sarika-malhotra">Sarika Malhotra</h3>
+                  </div>
+
+                  <ul>
+                    <li>Qualification: Telecommunication Engineer</li>
+                    <li>Engineering experience: 8 years</li>
+                    <li>CDR writing experience: 6 years</li>
+                    <li>Client review: Top-notch CDR writer in Australia.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="why-choose-us">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="our-core-values">Our Core Values</h2>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="bordered-icon">
+                    <i class="bi-clock"></i>
+                  </div>
+                  <h3 id="timely-delivery">Timely Delivery</h3>
+                  <p>
+                    Time is precious for both the service provider and the
+                    service receiver. Thus, once we start our writing venture,
+                    we will make sure to offer a standard report in a given
+                    time.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="bordered-icon">
+                    <i class="bi-journals"></i>
+                  </div>
+                  <h3 id="quality-work">Quality Work</h3>
+                  <p>
+                    Our company’s driving force is “Achieving Excellence in
+                    Report Writing Services”. We give the utmost value to the
+                    quality of our reports.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="bordered-icon">
+                    <i class="bi-currency-dollar"></i>
+                  </div>
+                  <h3 id="authenticity">Authenticity</h3>
+                  <p>
+                    Authenticity and originality are not just valued but
+                    demanded by assessing authorities (i.e.
+                    <a
+                      target="_blank"
+                      href="https://www.engineersaustralia.org.au/"
+                      >Engineers Australia</a
+                    >,
+                    <a target="_blank" href="https://www.acs.org.au/"
+                      >Australian Computer Society</a
+                    >
+                    and
+                    <a target="_blank" href="https://www.engineeringnz.org/"
+                      >Engineering New Zealand</a
+                    >). So, we create original reports that pass the test on
+                    Turnitin software (used by assessors).
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="bordered-icon">
+                    <i class="bi-award"></i>
+                  </div>
+                  <h3 id="honesty">Honesty</h3>
+                  <p>
+                    We always stay honest and transparent to build a strong
+                    foundation of trust with our clients. We will always provide
+                    continuous communication regarding the progress of your
+                    report.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="our-progress-status mb-5 pt-0">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Our Progress Status</h2>
+          </div>
+          <div class="row g-md-4">
+            <div class="col-6 col-lg-4">
+              <div class="border-box">
+                <img src="./img/border-line.png" alt="Curve Line" />
+              </div>
+              <div class="steps-number">
+                <span>01</span>
+              </div>
+              <div class="image-wrapper">
+                <img src="./img/step1-img.svg" alt="Curve Line" />
+              </div>
+
+              <div class="status-content">
+                <p>
+                  100+ Professional<br />
+                  Industry-Specialised Writers
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4">
+              <div class="border-box">
+                <img src="./img/border-line.png" alt="Curve Line" />
+              </div>
+              <div class="steps-number">
+                <span>02</span>
+              </div>
+              <div class="image-wrapper">
+                <img src="./img/step2-img.svg" alt="Curve Line" />
+              </div>
+              <div class="status-content">
+                <p>
+                  10+ Australian<br />
+                  Report Writing Services
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4 mx-auto mt-md-5 d-none d-md-flex">
+              <div class="steps-number">
+                <span>03</span>
+              </div>
+              <div class="image-wrapper">
+                <img src="./img/step3-img.svg" alt="Curve Line" />
+              </div>
+              <div class="status-content">
+                <p>
+                  25+ Engineering<br />
+                  Domains Covered
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row g-md-4">
+            <div class="col-6 col-lg-4 mx-auto mt-md-5 d-md-none">
+              <div class="steps-number">
+                <span>03</span>
+              </div>
+              <div class="image-wrapper">
+                <img src="./img/step3-img.svg" alt="Curve Line" />
+              </div>
+              <div class="status-content">
+                <p>
+                  25+ Engineering<br />
+                  Domains Covered
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4">
+              <div class="border-box">
+                <img src="./img/border-line.png" alt="Curve Line" />
+              </div>
+              <div class="steps-number">
+                <span>04</span>
+              </div>
+              <div class="image-wrapper">
+                <img src="./img/step4-img.svg" alt="Curve Line" />
+              </div>
+              <div class="status-content">
+                <p>10000+ Revisions</p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4">
+              <div class="border-box">
+                <img src="./img/border-line.png" alt="Curve Line" />
+              </div>
+              <div class="steps-number">
+                <span>05</span>
+              </div>
+              <div class="image-wrapper">
+                <img src="./img/step5-img.svg" alt="Curve Line" />
+              </div>
+              <div class="status-content">
+                <p>100% Confidentiality</p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4 mx-auto mt-md-5">
+              <div class="steps-number">
+                <span>06</span>
+              </div>
+              <div class="image-wrapper">
+                <img src="./img/step6-img.svg" alt="Curve Line" />
+              </div>
+              <div class="status-content">
+                <p>1000+ Happy Clients</p>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-6 col-lg-4 mx-auto">
+              <div class="steps-number">
+                <span>07</span>
+              </div>
+              <div class="image-wrapper">
+                <img src="./img/step7-img.svg" alt="Curve Line" />
+              </div>
+              <div class="status-content">
+                <p>100% Satisfaction</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="call-to-action mb-5">
+        <div class="container">
+          <p class="p-heading">
+            Move to Your Dreamland as a Skilled Professional with a Perfect
+            Report from Us!
+          </p>
+          <a href="australia-pr-points-calculator" class="btn-all">Lets Chat</a>
+        </div>
+      </section>
+      <section class="testimonials mb-5">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="testimonials-what-clients-say-about-us">
+              Testimonials: What clients say about us
+            </h2>
+          </div>
+          <div id="carouselTestimonials" class="carousel carousel-fade">
+            <div class="row row-cols-1 row-cols-lg-2 align-items-center">
+              <div class="col carousel-indicators order-1 order-lg-0">
+                <img
+                  src="./img/kumar-gupta.webp"
+                  alt="Kumar Gupta"
+                  loading="lazy"
+                  type="button"
+                  data-bs-target="#carouselTestimonials"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                />
+                <img
+                  src="./img/manoj-shah.webp"
+                  alt="Manoj Shah"
+                  loading="lazy"
+                  type="button"
+                  data-bs-target="#carouselTestimonials"
+                  data-bs-slide-to="1"
+                  aria-current="true"
+                  aria-label="Slide 2"
+                />
+                <img
+                  src="./img/shree-ram-karki.webp"
+                  alt="Shree Ram Karki"
+                  loading="lazy"
+                  type="button"
+                  data-bs-target="#carouselTestimonials"
+                  data-bs-slide-to="2"
+                  aria-current="true"
+                  aria-label="Slide 3"
+                /><img
+                  src="./img/pyal-mathews.webp"
+                  alt="Pyal Mathews"
+                  loading="lazy"
+                  type="button"
+                  data-bs-target="#carouselTestimonials"
+                  data-bs-slide-to="3"
+                  aria-current="true"
+                  aria-label="Slide 4"
+                />
+              </div>
+              <div class="col">
+                <div class="carousel-item active">
+                  <p id="kumar-gupta">Kumar Gupta</p>
+                  <p>Electrical Engineer</p>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <p>
+                    Their extensive writing and amazing work helped me secure my
+                    recognition with EA by being so friendly and communicative
+                    throughout the process. They wrote a top-notch,
+                    plagiarism-free report and delivered it within the deadline.
+                  </p>
+                </div>
+                <div class="carousel-item order-0 order-lg-1">
+                  <p id="manoj-shah">Manoj Shah</p>
+                  <p>Civil Engineer</p>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <p>
+                    Clear communication and top-notch work from Adhya. My report
+                    was genuine, high quality, and plagiarism free. It was
+                    accepted at first go, all thanks to her. I recommend CDR
+                    Writer Australia for assistance with your migration skills
+                    assessment.
+                  </p>
+                </div>
+                <div class="carousel-item">
+                  <p id="shree-ram-karki">Shree Ram Karki</p>
+                  <p>Mechanical Engineer</p>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <p>
+                    Previously, I faced multiple rejections from EA with my CDR
+                    for Mechanical Engineer. Their mechanical engineering
+                    specialist helped me acquire a positive outcome from
+                    Engineers' Australia on my skill assessment. Thanks,
+                    cdrwriteraustralia.com
+                  </p>
+                </div>
+                <div class="carousel-item">
+                  <p id="pyal-mathews">Pyal Mathews</p>
+                  <p>Biomedical Engineer</p>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <i class="bi-star-fill"></i>
+                  <p>
+                    I got my Engineers Australia skill assessment for Biomedical
+                    Engineering. I am thankful to Adhya Sharma for her support
+                    and help with my CDR and would really recommend her as the
+                    best CDR writer. I really appreciate her guidance and hard
+                    work.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <button
+        class="go-to-top-btn"
+        onclick="goToTop()"
+        id="goToTop"
+        aria-label="Go to Top Button"
+      >
+        <i class="bi-arrow-up"></i>
+      </button>
+      <section id="whatsapp-chat">
+        <div class="container">
+          <button
+            type="button"
+            onclick="show()"
+            class="fixed-whatsapp-icon"
+            aria-label="Whatsapp Popup button"
+          >
+            <i class="bi bi-whatsapp"></i>
+          </button>
+          <div class="row">
+            <div
+              class="col-11 col-md-5 col-lg-3 whatsapp-card"
+              id="showWhatsapp"
+              style="visibility: hidden"
+            >
+              <div class="card">
+                <div class="card-header">
+                  <div class="chat-icon">
+                    <i class="bi bi-wechat"></i>
+                  </div>
+                  <div class="chat-person">
+                    <p>Aadya Sharma</p>
+                    <p>Text Us in Whatsapp</p>
+                  </div>
+                  <button
+                    type="button"
+                    onclick="closeWhatsapp()"
+                    class="btn-close btn-close-white"
+                  ></button>
+                </div>
+                <div class="card-body">
+                  <p class="text-box">
+                    <span>Aadya Sharma</span><br />
+                    Hi, there!<br />
+                    How can I help you?
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a
+                    href="https://wa.link/o9z7o4"
+                    target="_blank"
+                    class="whatsapp-start-chat-btn"
+                  >
+                    <i class="bi-whatsapp me-3"></i>Start Chat
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-form mt-5">
+        <div class="container">
+          <div class="section-heading">
+            <h3 id="contact-us">Contact Us</h3>
+          </div>
+          <div class="row g-4 g-md-5 g-lg-0">
+            <div class="col-12 col-lg-8 contact-form__form">
+              <div class="card">
+                <div class="card-body">
+                  <form id="submitFooter" action="#">
+                    <div class="row g-4 g-md-5">
+                      <div class="col-12 col-md-4">
+                        <label for="nameFooter">Full Name*</label>
+                        <input
+                          type="text"
+                          name="Name"
+                          id="nameFooter"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <label for="emailFooter">Email*</label>
+                        <input
+                          type="email"
+                          name="Email"
+                          id="emailFooter"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <label for="phoneFooter">Phone Number*</label>
+                        <input
+                          type="tel"
+                          name="Number"
+                          id="phoneFooter"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                      <div class="col-12 col-md-12">
+                        <label for="messageFooter">Message</label>
+                        <textarea
+                          name="Message"
+                          id="messageFooter"
+                          class="form-control"
+                        ></textarea>
+                      </div>
+                      <button class="btn-all">Send Message</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 contact-form__info">
+              <div class="card">
+                <div class="card-body">
+                  <ul>
+                    <li>
+                      <i class="bi-telephone-outbound"></i>
+                      <a href="tel:+61 480097490" target="_blank"
+                        >+61 480097490</a
+                      >
+                    </li>
+                    <li>
+                      <i class="bi-envelope"></i>
+                      <a href="mailto:aadhyasharma469@gmail.com"
+                        >aadhyasharma469@gmail.com</a
+                      >
+                    </li>
+                    <li>
+                      <i class="bi-geo-alt"></i>Parramatta NSW 2150 Australia
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer-links">
+        <div class="container-fluid">
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-2 footer-links__about-us">
+              <div class="card">
+                <div class="card-body">
+                  <a href="/" aria-label="CDR Writer Australia Logo"
+                    ><img
+                      src="./img/cdr-writer-australia-logo.webp"
+                      alt="CDR Writer Australia Logo"
+                  /></a>
+                </div>
+              </div>
+              <p>
+                CDRWriterAustralia.com is neither affiliated with nor endorsed
+                by Engineers Australia.
+                <a href="about-us">Learn More About Us.</a>
+              </p>
+              <p>Follow Us On:</p>
+              <ol>
+                <li>
+                  <a
+                    href="https://www.facebook.com/cdrwriteraustralia"
+                    target="_blank"
+                    aria-label="Facebook Link of CDR Writer Australia"
+                    ><i class="bi-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://wa.link/o9z7o4"
+                    target="_blank"
+                    aria-label="Whatsapp Link of CDR Writer Australia"
+                    ><i class="bi bi-whatsapp"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/cdrwriteraustralia"
+                    target="_blank"
+                    aria-label="Linkedin Link of CDR Writer Australia"
+                    ><i class="bi bi-linkedin"></i>
+                  </a>
+                </li>
+              </ol>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-2 footer-links__useful-links d-none d-md-block"
+            >
+              <h4>Useful Link</h4>
+              <ul>
+                <li><a href="anzsco-codes">ANZSCO Codes</a></li>
+                <li><a href="cdr-report-samples">CDR Samples</a></li>
+
+                <li><a href="pricing">Pricing</a></li>
+                <li>
+                  <a href="australia-pr-points-calculator"
+                    >PR Point Calculator</a
+                  >
+                </li>
+                <li><a href="contact">Contact</a></li>
+                <li>
+                  <a href="https://wa.link/o9z7o4" target="_blank"
+                    >Ask an Expert</a
+                  >
+                </li>
+                <li>
+                  <a href="terms-of-use">Terms of Use</a>
+                </li>
+                <li>
+                  <a href="privacy-policy">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="refund-and-cancellation-policy"
+                    >Refund and Cancellation Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 footer-links__useful-links d-md-none">
+              <div class="accordion" id="accordionExample1">
+                <div class="accordion-item">
+                  <h4 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne1"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Useful Link
+                    </button>
+                  </h4>
+                  <div
+                    id="collapseOne1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample1"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li><a href="anzsco-codes">ANZSCO Codes</a></li>
+                        <li><a href="cdr-report-samples">CDR Samples</a></li>
+
+                        <li><a href="pricing">Pricing</a></li>
+                        <li>
+                          <a href="australia-pr-points-calculator"
+                            >PR Point Calculator</a
+                          >
+                        </li>
+                        <li><a href="contact">Contact</a></li>
+                        <li>
+                          <a href="https://wa.link/o9z7o4" target="_blank"
+                            >Ask an Expert</a
+                          >
+                        </li>
+                        <li>
+                          <a href="terms-of-use">Terms of Use</a>
+                        </li>
+                        <li>
+                          <a href="privacy-policy">Privacy Policy</a>
+                        </li>
+                        <li>
+                          <a href="refund-and-cancellation-policy"
+                            >Refund and Cancellation Policy</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-3 footer-links__services d-none d-md-block"
+            >
+              <h4>Services</h4>
+              <ul>
+                <li><a href="services">All CDR Services</a></li>
+                <li><a href="cdr-report-writing">CDR Report Writing</a></li>
+
+                <li>
+                  <a href="career-episode-writing">Career Episode Writing</a>
+                </li>
+                <li>
+                  <a href="summary-statement-writing"
+                    >Summary Statement Writing</a
+                  >
+                </li>
+                <li>
+                  <a href="cdr-review-service">CDR Review Service</a>
+                </li>
+                <li><a href="stage-2-cdr-writing">Stage 2 CDR Writing</a></li>
+                <li>
+                  <a href="stage-2-competency-claims-writing"
+                    >Stage 2 Competency Claims Writing</a
+                  >
+                </li>
+                <li>
+                  <a href="cdr-stage-2-review">CDR Stage 2 Review Service</a>
+                </li>
+                <li><a href="rpl-report-writing">RPL Report Writing</a></li>
+                <li><a href="rpl-review-service">RPL Review Service</a></li>
+                <li>
+                  <a href="ka02-report-writing">KA02 Report Writing</a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-3 footer-links__services d-md-none"
+            >
+              <div class="accordion" id="accordionExample2">
+                <div class="accordion-item">
+                  <h4 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo2"
+                      aria-expanded="true"
+                      aria-controls="collapseTwo"
+                    >
+                      Services
+                    </button>
+                  </h4>
+                  <div
+                    id="collapseTwo2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample2"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li><a href="services">All CDR Services</a></li>
+                        <li>
+                          <a href="cdr-report-writing">CDR Report Writing</a>
+                        </li>
+
+                        <li>
+                          <a href="career-episode-writing"
+                            >Career Episode Writing</a
+                          >
+                        </li>
+                        <li>
+                          <a href="summary-statement-writing"
+                            >Summary Statement Writing</a
+                          >
+                        </li>
+                        <li>
+                          <a href="cdr-review-service">CDR Review Service</a>
+                        </li>
+                        <li>
+                          <a href="stage-2-cdr-writing">Stage 2 CDR Writing</a>
+                        </li>
+                        <li>
+                          <a href="stage-2-competency-claims-writing"
+                            >Stage 2 Competency Claims Writing</a
+                          >
+                        </li>
+                        <li>
+                          <a href="cdr-stage-2-review"
+                            >CDR Stage 2 Review Service</a
+                          >
+                        </li>
+                        <li>
+                          <a href="rpl-report-writing">RPL Report Writing</a>
+                        </li>
+                        <li>
+                          <a href="rpl-review-service">RPL Review Service</a>
+                        </li>
+                        <li>
+                          <a href="ka02-report-writing">KA02 Report Writing</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 footer-links__blogs d-none d-md-block"
+            >
+              <h4>Blogs</h4>
+              <ul>
+                <li>
+                  <a href="mltssl-medium-long-term-strategic-skills-list-2022"
+                    >Medium and Long-Term Strategic Skills List (MLTSSL) -
+                    2023</a
+                  >
+                </li>
+                <li>
+                  <a href="national-engineering-register"
+                    >What is National Engineering Register (NER)</a
+                  >
+                </li>
+                <li>
+                  <a href="cpd-statement-sample"
+                    >CPD Statement Sample for CDR Writers
+                  </a>
+                </li>
+                <li>
+                  <a href="cdr-report-for-electrical-engineers"
+                    >CDR Report For Electrical Engineers - ANZSCO Code 233311</a
+                  >
+                </li>
+                <li>
+                  <a href="top-10-engineering-jobs-in-australia"
+                    >Top 10 Engineering Jobs in Australia for 2022 / 2023</a
+                  >
+                </li>
+                <li>
+                  <a href="acs-skills-assessment">ACS Skills Assessment</a>
+                </li>
+                <li>
+                  <a href="engineers-australia-skills-assessment"
+                    >Engineers Australia Skills Assessment</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-3 footer-links__services d-md-none"
+            >
+              <div class="accordion" id="accordionExample3">
+                <div class="accordion-item">
+                  <h4 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree3"
+                      aria-expanded="true"
+                      aria-controls="collapseThree"
+                    >
+                      Blogs
+                    </button>
+                  </h4>
+                  <div
+                    id="collapseThree3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample3"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>
+                          <a
+                            href="mltssl-medium-long-term-strategic-skills-list-2022"
+                            >Medium and Long-Term Strategic Skills List (MLTSSL)
+                            - 2023</a
+                          >
+                        </li>
+                        <li>
+                          <a href="national-engineering-register"
+                            >What is National Engineering Register (NER)</a
+                          >
+                        </li>
+                        <li>
+                          <a href="cpd-statement-sample"
+                            >CPD Statement Sample for CDR Writers
+                          </a>
+                        </li>
+                        <li>
+                          <a href="cdr-report-for-electrical-engineers"
+                            >CDR Report For Electrical Engineers - ANZSCO Code
+                            233311</a
+                          >
+                        </li>
+                        <li>
+                          <a href="top-10-engineering-jobs-in-australia"
+                            >Top 10 Engineering Jobs in Australia for 2022 /
+                            2023</a
+                          >
+                        </li>
+                        <li>
+                          <a href="acs-skills-assessment"
+                            >ACS Skills Assessment</a
+                          >
+                        </li>
+                        <li>
+                          <a href="engineers-australia-skills-assessment"
+                            >Engineers Australia Skills Assessment</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="copyrights">
+            Copyrights 2024 ©All Rights Reserved - CDR Writer Australia
+          </p>
+        </div>
+      </section>
+    </footer>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "About Us",
+        "description": "CDR Writer Australia provides unique and plagiarism-free CDR reports, RPL reports, and KA02 reports which ensures successful skills assessment.",
+        "logo": "https://www.cdrwriteraustralia.com/img/cdr-writer-australia-logo.webp",
+        "url": "https://www.cdrwriteraustralia.com/about-us",
+        "telephone": "+61 480097490",
+        "priceRange": "AU $79-$2500",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Parramatta",
+          "addressRegion": "NSW",
+          "postalCode": "2150",
+          "addressCountry": "AU"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        },
+        "sameAs": [
+          "https://www.cdrwriteraustralia.com",
+          "https://www.facebook.com/cdrwriteraustralia",
+          "https://www.linkedin.com/company/cdrwriteraustralia"
+        ]
+      }
+    </script>
+    <!-- <script src="./footer.js"></script>
+    <my-footer></my-footer> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <script>
+      const btnReadMore = document.querySelectorAll(".readMore");
+      btnReadMore.forEach(function (button) {
+        const cardBody = button.closest(".card-body");
+        const cardText = cardBody.querySelector(".reading-less");
+        button.addEventListener("click", function () {
+          cardText.classList.toggle("reading-more");
+          if (cardText.classList.contains("reading-more")) {
+            button.textContent = "Read Less";
+          } else {
+            button.textContent = "Read More";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

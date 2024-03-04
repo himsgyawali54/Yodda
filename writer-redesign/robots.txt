@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /sitemap_index.xml
+Sitemap: https://www.cdrwriteraustralia.com/sitemap.xml
+Crawl-delay: 0
