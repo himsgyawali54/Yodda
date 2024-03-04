@@ -50,7 +50,6 @@ a {
 }
 a:hover {
   color: var(--color-primary);
-  
 }
 .btn-all {
   display: inline-block;
@@ -98,7 +97,6 @@ svg,
 video {
   max-width: 100%;
   height: auto;
-  
 }
 ul,
 ol {
@@ -107,7 +105,6 @@ ol {
 li {
   list-style-position: inside;
 }
-
 
 header {
   padding: 0.25rem 0;
@@ -460,8 +457,14 @@ footer .go-to-top-btn i {
   color: #fff;
 }
 @media (max-width: 991px) {
-  .navbar{
+  .navbar {
     padding-top: 2rem;
+  }
+  header.navbar-scrolled {
+    box-shadow: 10px 5px 5px #c7c2c245;
+  }
+  main section:first-child {
+    padding-top: 9rem;
   }
   footer .go-to-top-btn {
     right: 3%;

@@ -16,11 +16,28 @@ function goToTop() {
 
 navEl = document.querySelector(".fixed-top");
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 50) {
+  if (window.scrollY > 0) {
     navEl.classList.add("navbar-scrolled");
-  } else if (window.scrollY < 50) {
+  } else if (window.scrollY < 0) {
     navEl.classList.remove("navbar-scrolled");
   }
+});
+//close menu when click outside
+document.addEventListener("DOMContentLoaded", function() {
+ 
+  var navbarMenu = document.getElementById('navbarSupportedContent');
+  document.addEventListener('click', function(event) {
+    var isClickInsideNavbar = navbarMenu.contains(event.target);
+    var isNavbarToggler = event.target.closest('.navbar-toggler');
+
+    
+    if (!isClickInsideNavbar && !isNavbarToggler) {
+      var navbarToggler = document.querySelector('.navbar-toggler');
+      if (navbarMenu.classList.contains('show')) {
+        navbarToggler.click(); 
+      }
+    }
+  });
 });
 
 // Function to handle form Validation for email
