@@ -106,7 +106,7 @@
 .things-to-consider-carousel .card .card-body p {
   color: #fff;
   padding-bottom: 1rem;
-  font-size: calc(var(--h5-fontsize) + 0.1rem);
+  font-size: calc(var(--h5-fontsize) + 0.2rem);
   font-weight: 400;
 }
 @media (max-width: 768px) {
