@@ -30,6 +30,18 @@
   color: #fff;
   background-image: none;
 }
+.services-pricing .table th {
+  padding: 1rem;
+  font-size: clamp(1.2rem, 1.5vw, 1.8rem);
+}
+.services-pricing table tbody tr th {
+  text-align: start;
+}
+.services-pricing .table thead tr th:first-of-type {
+  text-align: start;
+  font-weight: 600;
+  vertical-align: middle;
+}
 .services-carousel {
   margin: 1rem 0 5rem;
 }
