@@ -75,8 +75,9 @@
   padding: 3rem 0 0.5rem;
   font-weight: 600;
 }
+
 .things-to-consider-heading {
-  padding: 1.5rem 0 0;
+  padding: 1.8rem 0 0;
 }
 .things-to-consider {
   padding: 1rem 0 1rem 0.8rem;
@@ -299,6 +300,9 @@
   }
 }
 @media (max-width: 768px) {
+  .row .col-md-8 .tab-content .tab-pane {
+    padding: 1rem;
+  }
   .acs-rpl-report-content .tab-content .tab-pane {
     padding: 3rem 0 0;
   }
