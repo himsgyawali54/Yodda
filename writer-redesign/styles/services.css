@@ -256,9 +256,7 @@
 .acs-rpl-report-content {
   padding: 5rem 0 0rem;
 }
-.acs-rpl-report-content .review-section {
-  margin-top: 4rem;
-}
+
 .acs-rpl-report-content .review-section .card {
   margin: 1rem 0 2.5rem;
 }
@@ -350,9 +348,7 @@
 .stage-2-competency-claims-writing .group-tab {
   padding: 4rem 0 1rem;
 }
-.stage-2-competency-claims-writing .things-to-consider {
-  padding-top: 3.5rem;
-}
+
 .stage-2-competency-claims-writing .row .tab-pane {
   padding: 2rem;
 }
