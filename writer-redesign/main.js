@@ -18,10 +18,10 @@ navEl = document.querySelector(".fixed-top");
 window.addEventListener("scroll", () => {
   if (window.scrollY > 0) {
     navEl.classList.add("navbar-scrolled");
-  } else if (window.scrollY < 0) {
-    navEl.classList.remove("navbar-scrolled");
-  }
-});
+  // } else if (window.scrollY < 0) {
+  //   navEl.classList.remove("navbar-scrolled");
+  // }
+}});
 //close menu when click outside
 document.addEventListener("DOMContentLoaded", function() {
  
