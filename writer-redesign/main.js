@@ -23,23 +23,17 @@ window.addEventListener("scroll", () => {
   }
 });
 
-//close menu when click outside
+//close menu when click outside and link
 document.addEventListener("DOMContentLoaded", function() {
   var navbarMenu = document.getElementById('navbarSupportedContent');
+  var navbarToggler = document.querySelector('.navbar-toggler');
   
   // Function to close the navbar menu
   function closeNavbarMenu() {
-    var navbarToggler = document.querySelector('.navbar-toggler');
     if (navbarMenu.classList.contains('show')) {
       navbarToggler.click(); 
     }
   }
-  
-  // Add event listener to close the menu when a link is clicked
-  var navLinks = document.querySelectorAll('.nav-link');
-  navLinks.forEach(function(link) {
-    link.addEventListener('click', closeNavbarMenu);
-  });
   
   // Add event listener to close the menu when clicking outside the menu or the navbar toggler
   document.addEventListener('click', function(event) {
@@ -50,7 +44,16 @@ document.addEventListener("DOMContentLoaded", function() {
       closeNavbarMenu();
     }
   });
+  
+  // Add event listener to prevent closing the menu when clicking on dropdown buttons
+  var dropdownButtons = document.querySelectorAll('.nav-link.dropdown-toggle');
+  dropdownButtons.forEach(function(button) {
+    button.addEventListener('click', function(event) {
+      event.stopPropagation(); // Prevent the click event from bubbling up to the document
+    });
+  });
 });
+
 
 
 // Function to handle form Validation for email
