@@ -30,7 +30,7 @@
       .floating-btn {
         position: fixed;
         z-index: 999;
-        top: 10%;
+        top: 12%;
         right: 5%;
       }
 
@@ -62,6 +62,11 @@
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
+      }
+      @media (max-width: 991px) {
+        .floating-btn {
+          top: 15%;
+        }
       }
     </style>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
