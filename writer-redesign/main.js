@@ -15,20 +15,15 @@ function goToTop() {
 }
 
 navEl = document.querySelector(".fixed-top");
-function toggleNavbarClass() {
-  if (window.scrollY > 0) {
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 10) {
     navEl.classList.add("navbar-scrolled");
-  } else {
+  } else if (window.scrollY < 10) {
     navEl.classList.remove("navbar-scrolled");
   }
-}
-// Add event listener for scroll event
-console.log("Adding scroll event listener...");
-window.addEventListener("scroll", toggleNavbarClass);
+});
 
-// Check navbar scroll position on page load
-console.log("Adding load event listener...");
-window.addEventListener("load", toggleNavbarClass);
+//close menu when click outside
 document.addEventListener("DOMContentLoaded", function() {
  
   var navbarMenu = document.getElementById('navbarSupportedContent');

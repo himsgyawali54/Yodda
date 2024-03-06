@@ -106,6 +106,9 @@ ol {
 li {
   list-style-position: inside;
 }
+.fixed-top {
+  background-color: #fff !important;
+}
 
 header {
   padding: 0.25rem 0;
