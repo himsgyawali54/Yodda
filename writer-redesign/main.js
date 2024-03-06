@@ -34,6 +34,11 @@ document.addEventListener("DOMContentLoaded", function() {
       navbarToggler.click(); 
     }
   }
+   // Add event listener to close the menu when a link is clicked
+   var navLinks = document.querySelectorAll('.nav-link');
+   navLinks.forEach(function(link) {
+     link.addEventListener('click', closeNavbarMenu);
+   });
   
   // Add event listener to close the menu when clicking outside the menu or the navbar toggler
   document.addEventListener('click', function(event) {
