@@ -15,13 +15,15 @@ function goToTop() {
 }
 
 navEl = document.querySelector(".fixed-top");
-window.addEventListener("scroll", () => {
+function toggleNavbarClass() {
   if (window.scrollY > 10) {
     navEl.classList.add("navbar-scrolled");
-  } else if (window.scrollY < 10) {
+  } else {
     navEl.classList.remove("navbar-scrolled");
   }
-});
+}
+window.addEventListener("scroll", toggleNavbarClass);
+window.addEventListener("load", toggleNavbarClass);
 //close menu when click outside
 document.addEventListener("DOMContentLoaded", function() {
  
