@@ -73,6 +73,13 @@ const handlePhoneValidation =(phoneNumber) =>{
     alert("Please Enter PhoneNumber");
     return false;
   }
+  const regex = /^(?:[0-9] ?){5,11}[0-9]$/;
+
+  if(!regex.test(phoneNumber)){
+  
+    return false;
+  }
+  
   return true;
 }
 
@@ -122,24 +129,25 @@ if (submitBtn) {
     const input = document.querySelector("#NumberHero");
     const phoneNumber = input.value;
     const countryCode = input.getAttribute('data-country-code');
-    const flag = input.getAttribute('data-country-flag');
+    
     const message = document.querySelector("#MessageHero").value;
 
     console.log("Name:", name);
     console.log("Email:", email);
     console.log("Phone Number:", phoneNumber);
     console.log("Country Code:", countryCode);
-    console.log("Flag:", flag);
+    
     console.log("Message:", message);
 
     // Form validation
-    if (!name || !email || !phoneNumber || !message) {
+    if (!name || !email || !phoneNumber ||  !message) {
       alert("Please fill up every field.");
     } else if (!handleEmailValidation(email)) {
       alert("Invalid email address.");
-    } else if (!handlePhoneValidation(phoneNumber)) {
+    } else if (!handlePhoneValidation(phoneNumber) ) {
       alert("Invalid phone number.");
-    } else {
+    }
+    else {
       // Send email with form data
       Email.send({
         SecureToken: "12f7607c-5485-4210-b851-bd317043bddb",
@@ -148,7 +156,7 @@ if (submitBtn) {
         Subject: "New CDR Form Enquiry",
         Body:
           "Name: " +
-          name +
+          name + 
           "<br /> Email: " +
           email +
           "<br /> Number: " + 
@@ -157,7 +165,7 @@ if (submitBtn) {
           message,
       }).then(() => {
         alert("Message sent successfully.");
-        document.getElementById("submitHero").reset(); // Reset form
+        document.getElementById("submitHero").reset(); 
       }).catch((error) => {
         console.error("Error sending message:", error);
         alert("Error sending message. Please try again later.");
@@ -253,14 +261,23 @@ submitFooter.addEventListener("submit", (e) => {
 
 
  
-// });
+
 const input = document.querySelector("#NumberHero");
-const flagElement = document.createElement('img');
+input.addEventListener('input', function (event) {
+  let inputValue = event.target.value.trim();
+  
+  // Remove any non-numeric characters from the input
+  inputValue = inputValue.replace(/\D/g, '');
+  
+  // Update the input value with only numeric characters
+  event.target.value = inputValue;
+});
+
 
 // Initialize intlTelInput plugin with options
 const itiOptions = {
   separateDialCode: true,
-  initialCountry: "np"
+  initialCountry: "au"
 };
 const iti = window.intlTelInput(input, itiOptions);
 
@@ -268,39 +285,16 @@ const iti = window.intlTelInput(input, itiOptions);
 input.addEventListener('countrychange', function () {
   const countryCode = iti.getSelectedCountryData().dialCode;
   
+
   input.setAttribute('data-country-code', countryCode);
   
- 
 });
-// Define country-specific validation rules
-const countryValidationRules = {
-  'np': { // Nepal
-    length: 10,
-    allowedStartingDigits: ['98', '97']
-  },
-  // Add more countries and their validation rules as needed
-};
 
-// Add event listener for input validation
-input.addEventListener('input', function () {
-  const countryCode = iti.getSelectedCountryData().iso2; // Get ISO 2 country code
-  const inputValue = input.value.trim();
+
+
+
   
-  // Validate number length and starting digit based on country code
-  let isValid = true;
-  const validationRules = countryValidationRules[countryCode];
-  if (validationRules) {
-    isValid = inputValue.length === validationRules.length &&
-              validationRules.allowedStartingDigits.some(prefix => inputValue.startsWith(prefix));
-  }
 
-  // Display error message if number is invalid
-  if (!isValid) {
-    alert("Invalid phone number format for selected country.");
-    // Reset input value
-    input.value = '';
-  }
-});
 
 
 

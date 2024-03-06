@@ -832,6 +832,7 @@ footer .footer-links .copyrights {
   color: #000 !important;
   font-weight: 500 !important;
   margin-bottom: 0.5rem !important;
+  font-size: 18px !important;
 }
 .iti__country-list .iti__country {
   display: flex !important;
