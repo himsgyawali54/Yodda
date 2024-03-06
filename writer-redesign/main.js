@@ -22,10 +22,13 @@ function toggleNavbarClass() {
     navEl.classList.remove("navbar-scrolled");
   }
 }
-console.log("Window scrolled:", window.scrollY);
+// Add event listener for scroll event
+console.log("Adding scroll event listener...");
 window.addEventListener("scroll", toggleNavbarClass);
+
+// Check navbar scroll position on page load
+console.log("Adding load event listener...");
 window.addEventListener("load", toggleNavbarClass);
-//close menu when click outside
 document.addEventListener("DOMContentLoaded", function() {
  
   var navbarMenu = document.getElementById('navbarSupportedContent');
