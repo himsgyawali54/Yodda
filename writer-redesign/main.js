@@ -34,11 +34,6 @@ document.addEventListener("DOMContentLoaded", function() {
       navbarToggler.click(); 
     }
   }
-   // Add event listener to close the menu when a link is clicked
-   var navLinks = document.querySelectorAll('.nav-link');
-   navLinks.forEach(function(link) {
-     link.addEventListener('click', closeNavbarMenu);
-   });
   
   // Add event listener to close the menu when clicking outside the menu or the navbar toggler
   document.addEventListener('click', function(event) {
@@ -57,7 +52,14 @@ document.addEventListener("DOMContentLoaded", function() {
       event.stopPropagation(); // Prevent the click event from bubbling up to the document
     });
   });
+  
+  // Add event listener to close the menu when a link is clicked
+  var navLinks = document.querySelectorAll('.nav-link:not(.dropdown-toggle)');
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', closeNavbarMenu);
+  });
 });
+
 
 
 
