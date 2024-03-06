@@ -53,10 +53,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
   
-  // Add event listener to close the menu when a link is clicked
-  var navLinks = document.querySelectorAll('.nav-link:not(.dropdown-toggle)');
-  navLinks.forEach(function(link) {
-    link.addEventListener('click', closeNavbarMenu);
+   // Add event listener to close the menu when navigating to another page
+   window.addEventListener('beforeunload', function(event) {
+    closeNavbarMenu();
   });
 });
 
