@@ -16,12 +16,13 @@ function goToTop() {
 
 navEl = document.querySelector(".fixed-top");
 function toggleNavbarClass() {
-  if (window.scrollY > 10) {
+  if (window.scrollY > 0) {
     navEl.classList.add("navbar-scrolled");
   } else {
     navEl.classList.remove("navbar-scrolled");
   }
 }
+console.log("Window scrolled:", window.scrollY);
 window.addEventListener("scroll", toggleNavbarClass);
 window.addEventListener("load", toggleNavbarClass);
 //close menu when click outside

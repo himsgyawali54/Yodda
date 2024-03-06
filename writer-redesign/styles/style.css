@@ -465,6 +465,7 @@ footer .go-to-top-btn i {
   header.navbar-scrolled {
     background-color: #fff;
     box-shadow: 10px 5px 5px #c7c2c245;
+    z-index: 999;
   }
   header .navbar .nav-link {
     border-bottom: 0.5px solid #42b13834;
