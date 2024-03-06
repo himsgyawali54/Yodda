@@ -25,21 +25,33 @@ window.addEventListener("scroll", () => {
 
 //close menu when click outside
 document.addEventListener("DOMContentLoaded", function() {
- 
   var navbarMenu = document.getElementById('navbarSupportedContent');
+  
+  // Function to close the navbar menu
+  function closeNavbarMenu() {
+    var navbarToggler = document.querySelector('.navbar-toggler');
+    if (navbarMenu.classList.contains('show')) {
+      navbarToggler.click(); 
+    }
+  }
+  
+  // Add event listener to close the menu when a link is clicked
+  var navLinks = document.querySelectorAll('.nav-link');
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', closeNavbarMenu);
+  });
+  
+  // Add event listener to close the menu when clicking outside the menu or the navbar toggler
   document.addEventListener('click', function(event) {
     var isClickInsideNavbar = navbarMenu.contains(event.target);
     var isNavbarToggler = event.target.closest('.navbar-toggler');
-
     
     if (!isClickInsideNavbar && !isNavbarToggler) {
-      var navbarToggler = document.querySelector('.navbar-toggler');
-      if (navbarMenu.classList.contains('show')) {
-        navbarToggler.click(); 
-      }
+      closeNavbarMenu();
     }
   });
 });
+
 
 // Function to handle form Validation for email
 const handleEmailValidation = (email) => {
@@ -239,7 +251,7 @@ const flagElement = document.createElement('img');
 // Initialize intlTelInput plugin with options
 const itiOptions = {
   separateDialCode: true,
-  initialCountry: "au"
+  initialCountry: "np"
 };
 const iti = window.intlTelInput(input, itiOptions);
 
@@ -251,6 +263,36 @@ input.addEventListener('countrychange', function () {
   
  
 });
+// Define country-specific validation rules
+const countryValidationRules = {
+  'np': { // Nepal
+    length: 10,
+    allowedStartingDigits: ['98', '97']
+  },
+  // Add more countries and their validation rules as needed
+};
+
+// Add event listener for input validation
+input.addEventListener('input', function () {
+  const countryCode = iti.getSelectedCountryData().iso2; // Get ISO 2 country code
+  const inputValue = input.value.trim();
+  
+  // Validate number length and starting digit based on country code
+  let isValid = true;
+  const validationRules = countryValidationRules[countryCode];
+  if (validationRules) {
+    isValid = inputValue.length === validationRules.length &&
+              validationRules.allowedStartingDigits.some(prefix => inputValue.startsWith(prefix));
+  }
+
+  // Display error message if number is invalid
+  if (!isValid) {
+    alert("Invalid phone number format for selected country.");
+    // Reset input value
+    input.value = '';
+  }
+});
+
 
 
 
