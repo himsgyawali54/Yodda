@@ -51,6 +51,7 @@ a {
 a:hover {
   color: var(--color-primary);
 }
+
 .btn-all {
   display: inline-block;
   width: fit-content;
@@ -277,14 +278,15 @@ main section:first-child {
   padding: 0 0.75rem;
   color: #fff;
   left: 1.3rem;
-  top: -1.3rem;
+  top: -1.4rem;
+  z-index: 1;
 }
 .hero .row .form-col form .form-input .form-control {
   padding: 0.75rem;
   font-size: var(--h3-fontsize);
   border-color: #fff;
   background-color: var(--color-primary);
-  margin-bottom: 2rem;
+  margin: 2rem 0 2.5rem;
   resize: none;
 }
 .hero .row .form-col form .form-input .form-control::placeholder {
@@ -461,6 +463,7 @@ footer .go-to-top-btn i {
     padding-top: 2rem;
   }
   header.navbar-scrolled {
+    background-color: #fff;
     box-shadow: 10px 5px 5px #c7c2c245;
   }
   header .navbar .nav-link {
@@ -812,4 +815,23 @@ footer .footer-links .copyrights {
 .row .flex-column li a i {
   position: absolute;
   right: 2%;
+}
+.iti {
+  display: block;
+}
+.iti__country-list {
+  columns: auto !important;
+  white-space: normal;
+}
+.iti__country-name,
+.iti__dial-code {
+  color: #000 !important;
+  font-weight: 500 !important;
+  margin-bottom: 0.5rem !important;
+}
+.iti__country-list .iti__country {
+  display: flex !important;
+  gap: 2rem !important;
+  align-items: center !important;
+  padding-bottom: 0 !important;
 }

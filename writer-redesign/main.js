@@ -16,12 +16,12 @@ function goToTop() {
 
 navEl = document.querySelector(".fixed-top");
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 0) {
+  if (window.scrollY > 10) {
     navEl.classList.add("navbar-scrolled");
-  // } else if (window.scrollY < 0) {
-  //   navEl.classList.remove("navbar-scrolled");
-  // }
-}});
+  } else if (window.scrollY < 10) {
+    navEl.classList.remove("navbar-scrolled");
+  }
+});
 //close menu when click outside
 document.addEventListener("DOMContentLoaded", function() {
  
@@ -97,43 +97,53 @@ if (submitBtn) {
     e.preventDefault();
     const name = document.querySelector("#NameHero").value;
     const email = document.querySelector("#EmailHero").value;
-    const phoneNumber = document.querySelector("#NumberHero").value;
+    const input = document.querySelector("#NumberHero");
+    const phoneNumber = input.value;
+    const countryCode = input.getAttribute('data-country-code');
+    const flag = input.getAttribute('data-country-flag');
     const message = document.querySelector("#MessageHero").value;
-    
+
+    console.log("Name:", name);
+    console.log("Email:", email);
+    console.log("Phone Number:", phoneNumber);
+    console.log("Country Code:", countryCode);
+    console.log("Flag:", flag);
+    console.log("Message:", message);
+
+    // Form validation
     if (!name || !email || !phoneNumber || !message) {
-      alert("Please Fill Up Every Fields")
-    }
-    // Form Content Validation
-  
-    else if (!handleEmailValidation(email)) {
-      alert("Invalid Email Address")
-    }
-    else if (!handlePhoneValidation(phoneNumber)) {
-      alert("Invalid Phone Number")
-    }
-    else {
+      alert("Please fill up every field.");
+    } else if (!handleEmailValidation(email)) {
+      alert("Invalid email address.");
+    } else if (!handlePhoneValidation(phoneNumber)) {
+      alert("Invalid phone number.");
+    } else {
+      // Send email with form data
       Email.send({
         SecureToken: "12f7607c-5485-4210-b851-bd317043bddb",
-        To: "aadhyasharma469@gmail.com",
-        From: "aadhyasharma469@cdrwriteraustralia.com",
+        To: "minagyawali27@gmail.com",
+        From: "minagyawali27@cdrwriteraustralia.com",
         Subject: "New CDR Form Enquiry",
         Body:
           "Name: " +
-          document.getElementById("NameHero").value +
+          name +
           "<br /> Email: " +
-          document.getElementById("EmailHero").value +
-          "<br /> Number: " +
-          document.getElementById("NumberHero").value +
+          email +
+          "<br /> Number: " + 
+          countryCode +"-"+ phoneNumber +
           "<br /> Message: " +
-          document.getElementById("MessageHero").value,
-      }).then((message) => alert("Message Sent Successfuly"));
-      submitHero.reset();
-      return true;
+          message,
+      }).then(() => {
+        alert("Message sent successfully.");
+        document.getElementById("submitHero").reset(); // Reset form
+      }).catch((error) => {
+        console.error("Error sending message:", error);
+        alert("Error sending message. Please try again later.");
+      });
     }
-  
-    
   });
 }
+
 
 
 
@@ -218,6 +228,33 @@ submitFooter.addEventListener("submit", (e) => {
   }
   
 });
+
+
+ 
+// });
+const input = document.querySelector("#NumberHero");
+const flagElement = document.createElement('img');
+
+// Initialize intlTelInput plugin with options
+const itiOptions = {
+  separateDialCode: true,
+  initialCountry: "au"
+};
+const iti = window.intlTelInput(input, itiOptions);
+
+// Listen for the "ready" event to ensure plugin initialization is complete
+input.addEventListener('countrychange', function () {
+  const countryCode = iti.getSelectedCountryData().dialCode;
+  
+  input.setAttribute('data-country-code', countryCode);
+  
+ 
+});
+
+
+
+
+
 
 
 //============= Manage table of content ============
