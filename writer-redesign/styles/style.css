@@ -840,3 +840,6 @@ footer .footer-links .copyrights {
   align-items: center !important;
   padding-bottom: 0 !important;
 }
+#submitFooter .iti--separate-dial-code .iti__selected-flag {
+  background-color: white !important;
+}

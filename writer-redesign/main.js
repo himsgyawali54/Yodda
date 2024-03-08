@@ -225,7 +225,10 @@ submitFooter.addEventListener("submit", (e) => {
   console.log("Ss")
   const name = document.getElementById("nameFooter").value;
   const email = document.getElementById("emailFooter").value;
-  const phoneNumber = document.getElementById("phoneFooter").value;
+  
+  const input = document.querySelector("#phoneFooter");
+    const phoneNumber = input.value;
+    const countryCode = input.getAttribute('data-country-code');
   const message = document.getElementById("messageFooter").value;
   
   if (!name || !email || !phoneNumber || !message) {
@@ -241,19 +244,19 @@ submitFooter.addEventListener("submit", (e) => {
   else {
     Email.send({
       SecureToken: "12f7607c-5485-4210-b851-bd317043bddb",
-      To: "aadhyasharma469@gmail.com",
+      To: "minagyawali27@gmail.com",
       From: "aadhyasharma469@cdrwriteraustralia.com",
       Subject: "New CDR Form Enquiry",
       Body:
-        "Name: " +
-        document.getElementById("nameFooter").value +
-        "<br /> Email: " +
-        document.getElementById("emailFooter").value +
-        "<br /> Number: " +
-        document.getElementById("phoneFooter").value +
-        "<br /> Message: " +
-        document.getElementById("messageFooter").value,
-    }).then((message) => alert("Message Sent Successfuly"));
+      "Name: " +
+      name + 
+      "<br /> Email: " +
+      email +
+      "<br /> Number: " + 
+      countryCode +"-"+ phoneNumber +
+      "<br /> Message: " +
+      message,
+    }).then(() => alert("Message Sent Successfuly"));
     submitFooter.reset();
   }
   
@@ -263,6 +266,7 @@ submitFooter.addEventListener("submit", (e) => {
  
 
 const input = document.querySelector("#NumberHero");
+
 input.addEventListener('input', function (event) {
   let inputValue = event.target.value.trim();
   
@@ -289,8 +293,35 @@ input.addEventListener('countrychange', function () {
   input.setAttribute('data-country-code', countryCode);
   
 });
+//footer phone number validation
+
+const inputFooter = document.querySelector("#phoneFooter");
+input.addEventListener('inputFooter', function (event) {
+  let inputValue = event.target.value.trim();
+  
+  // Remove any non-numeric characters from the input
+  inputValue = inputValue.replace(/\D/g, '');
+  
+  // Update the input value with only numeric characters
+  event.target.value = inputValue;
+});
 
 
+// Initialize intlTelInput plugin with options
+const itiOptionsFooter = {
+  separateDialCode: true,
+  initialCountry: "au"
+};
+const itiFooter = window.intlTelInput(inputFooter, itiOptions);
+
+// Listen for the "ready" event to ensure plugin initialization is complete
+inputFooter.addEventListener('countrychange', function () {
+  const countryCode = itiFooter.getSelectedCountryData().dialCode;
+  
+
+  inputFooter.setAttribute('data-country-code', countryCode);
+  
+});
 
 
   
