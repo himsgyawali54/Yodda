@@ -1,3 +1,14 @@
+#single-post .toc {
+  position: sticky;
+  overflow-y: auto;
+  height: 30vh;
+  top: 5.9rem;
+  z-index: 999;
+  margin: 3rem 0;
+}
+#single-post .toc::-webkit-scrollbar {
+  display: none;
+}
 #single-post .g-md-3 {
   margin-top: 1rem;
 }
