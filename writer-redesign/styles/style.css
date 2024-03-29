@@ -167,8 +167,32 @@ header .navbar .sub-dropdown .dropdown-menu ul li {
   font-size: var(--h5-fontsize);
 }
 
+header .navbar .services-dropdown {
+  overflow: scroll;
+  height: 40dvh;
+  padding: 3rem;
+  margin-top: 0.4rem;
+}
+header .navbar .dropdown .services-dropdown a {
+  text-decoration: none;
+}
+
+header .navbar .services-dropdown p {
+  margin: 0;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+header .navbar .services-dropdown ul {
+  margin-bottom: 2rem;
+  padding-left: 0;
+  list-style-type: none;
+}
+header .navbar .services-dropdown ul li {
+  font-size: var(--h5-fontsize);
+}
+
 @media (min-width: 991px) {
-  header .navbar .dropdown:hover > .dropdown-menu {
+  header .navbar .dropdown:has(.sub-dropdown):hover > .dropdown-menu {
     display: block;
     left: -140%;
   }
@@ -184,6 +208,20 @@ header .navbar .sub-dropdown .dropdown-menu ul li {
     height: auto;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  header .navbar .dropdown:hover .services-dropdown {
+    display: flex;
+    left: -40%;
+  }
+
+  header .navbar .services-dropdown {
+    overflow: auto;
+    width: 105rem;
+    height: auto;
+    padding: 3rem;
+
+    transform: translateX(-30%);
   }
 }
 header .navbar .btn-all {
