@@ -196,6 +196,28 @@ h3 {
 }
 #single-post .other-blogs {
   text-align: center;
+  padding: 6rem 0 2rem;
+}
+#single-post .other-blogs .row {
+  padding-top: 1rem;
+}
+#single-post .other-blogs .col .card {
+  box-shadow: var(--card-shadow);
+  border: none;
+  height: 100%;
+}
+#single-post .other-blogs .col .card .card-body {
+  padding: 0 1rem 1rem;
+}
+
+#single-post .other-blogs .col .card .p-heading {
+  text-align: center;
+}
+#single-post .other-blogs .col .card:hover {
+  transition: transform 0.3s ease-in-out;
+
+  transform: scale(1.03);
+  border-bottom: 2px solid var(--color-primary);
 }
 #single-post .other-blogs ul {
   list-style: none;
