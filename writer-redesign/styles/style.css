@@ -170,7 +170,7 @@ header .navbar .sub-dropdown .dropdown-menu ul li {
 header .navbar .services-dropdown {
   overflow: scroll;
   height: 40dvh;
-  padding: 3rem;
+  padding: 2rem;
   margin-top: 0.4rem;
 }
 header .navbar .dropdown .services-dropdown a {
@@ -219,7 +219,7 @@ header .navbar .services-dropdown ul li {
     overflow: auto;
     width: 105rem;
     height: auto;
-    padding: 3rem;
+    padding: 2 rem;
 
     transform: translateX(-30%);
   }
